@@ -19,12 +19,10 @@
   <link rel="icon" href="./images/Yoghurt.jpg">
   <link rel="preload" href="{{asset('images/p3.jpg')}}" as="image">
   <title>Natures Specialty</title>
+  @livewireStyles
 </head>
 
 <body>
-  <!--geginning of navigator-->
-
-
   <nav>
     <div class="container">
       <a href="{{route('website_home')}}" class="logo">
@@ -38,10 +36,7 @@
         <li><a href="{{route('login')}}">LOGIN</a></li>
       </ul>
 
-     <div class="icons">
-        <a href="{{route('cart.index')}}"><i class="uil uil-shopping-cart"><sup class="cart_count">{{Gloudemans\Shoppingcart\Facades\Cart::content()->count()}}</sup></i></a>
-
-     </div>
+        @livewire('cart-counter')
 
       <button id="open_btn"><i class="uil uil-bars"></i></button>
       <button id="close_btn"><i class="uil uil-multiply"></i></button>
@@ -49,6 +44,7 @@
   </nav>
 
   @yield('page-content')
+
 
   <!--footer begins here-->
   <footer class="footer">
@@ -108,6 +104,7 @@
     </div>
   </footer>
 
+  @livewireScripts
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>

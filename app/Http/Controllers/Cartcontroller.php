@@ -38,14 +38,7 @@ class Cartcontroller extends Controller
      */
     public function store(Request $request)
     {
-        $product = Products::findOrFail($request->input('product_id'));
-        Cart::add(
-            $product->id,
-            $product->product_name,
-            1,
-            $product->product_price,
-           );
-    return redirect()->back();
+
     }
 
     /**

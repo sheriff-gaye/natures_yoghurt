@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Livewire\Counter;
+use App\Http\Livewire\CartTables;
+use App\Http\Livewire\CartCounter;
+use App\Http\Livewire\ShopProducts;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Qtycontroller;
@@ -10,15 +14,15 @@ use App\Http\Controllers\Paymentcontroller;
 use App\Http\Controllers\Websitecontroller;
 use App\Http\Controllers\Dashboardcontroller;
 use App\Http\Controllers\Admin\Blogcontroller;
+
+use App\Http\Controllers\shophandlecontroller;
 use App\Http\Controllers\Admin\Staffcontroller;
 use App\Http\Controllers\Admin\Userscontroller;
 use App\Http\Controllers\Auth\Logoutcontroller;
 use App\Http\Controllers\Admin\Reviewcontroller;
-
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Terms\Privacycontroller;
 use App\Http\Controllers\Admin\Categorycontroller;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +34,7 @@ use App\Http\Controllers\Admin\Categorycontroller;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/',[Websitecontroller::class,'index'])->name('website_home');
 
@@ -47,7 +52,13 @@ Route::get('/terms',[Privacycontroller::class,'terms'])->name('terms');
 
 Route::get('/return',[Privacycontroller::class,'returns'])->name('returns');
 
-Route::resource('/cart',Cartcontroller::class);
+
+Route::get('/counter',[Counter::class,'render'])->name('testing');
+
+// Route::get('/shop', [ShopProducts::class,'render'])->name('shop');
+// Route::post('/shop{id}',[ShopProducts::class,'addToCart'])->name('engine');
+
+Route::resource('/cart', Cartcontroller::class);
 
 Route::post('/incqty/{rowId}',[Qtycontroller::class,'increase'])->name('increase');
 

@@ -49,39 +49,39 @@ if (window.innerWidth < 1024) {
   })
 }
 
-const searchBtn = document.getElementById('search-item');
+// const searchBtn = document.getElementById('search-item');
 
-searchBtn.addEventListener('keyup', () => {
-  const searchBox = document.getElementById('search-item').value.toUpperCase();
-  const proucts = document.getElementById('product-list');
-  const product = document.querySelectorAll('.course');
-  const pname = proucts.getElementsByTagName('h4');
-  const msg=document.querySelector('#search_msg')
-  let num=0
+// searchBtn.addEventListener('keyup', () => {
+//   const searchBox = document.getElementById('search-item').value.toUpperCase();
+//   const proucts = document.getElementById('product-list');
+//   const product = document.querySelectorAll('.course');
+//   const pname = proucts.getElementsByTagName('h4');
+//   const msg=document.querySelector('#search_msg')
+//   let num=0
 
-  for (var i = 0; i < pname.length; i++) {
-    let match = product[i].getElementsByTagName('h4')[0];
+//   for (var i = 0; i < pname.length; i++) {
+//     let match = product[i].getElementsByTagName('h4')[0];
 
-    if (match) {
-      let textValue = match.textContent || match.innerHTML;
+//     if (match) {
+//       let textValue = match.textContent || match.innerHTML;
 
-      if (textValue.toUpperCase().indexOf(searchBox) > -1) {
-        product[i].style.display = ''
-        num++
-
-
-      }
-      else {
-        product[i].style.display = 'none';
-
-      }
-    }
-  }
-
-  if (num==0) {
-    msg.style.display='block'
-  }
+//       if (textValue.toUpperCase().indexOf(searchBox) > -1) {
+//         product[i].style.display = ''
+//         num++
 
 
-})
+//       }
+//       else {
+//         product[i].style.display = 'none';
+
+//       }
+//     }
+//   }
+
+//   if (num==0) {
+//     msg.style.display='block'
+//   }
+
+
+// })
 

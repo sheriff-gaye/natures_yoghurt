@@ -91,7 +91,7 @@ tbody tr td img {
 .cupon_container {
     margin-top: -10.7rem;
     display:flex;
-    justify-content: flex-end;
+    justify-content:space-between;
 }
 
 
@@ -126,7 +126,7 @@ tbody tr td img {
 }
 
 .total-details a{
-    padding: .4rem;
+    /* padding: .4rem; */
     margin: 0 8rem;
     margin-bottom: 1rem;
 

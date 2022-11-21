@@ -45,7 +45,9 @@
                         </td>
                     </tr>
                 @empty
-                    <h4 style="position:absolute;margin-top:4rem;">No Products In Cart</h4>
+                    <tr>
+                        <td colspan="6">No Item In Cart</td>
+                    </tr>
                 @endforelse
 
             </tbody>
@@ -56,7 +58,6 @@
        <div>
         @if($carts->count()>=1)
         <a class="btn btn-primary" wire:click='clear'>Clear Cart</a>
-        @endif
     </div>
 
         <div class="total">
@@ -66,6 +67,7 @@
                 <a href="" class="btn btn-primary">Proceed to Payment</a>
             </div>
         </div>
+        @endif
     </section>
 
 

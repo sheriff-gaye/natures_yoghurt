@@ -5,19 +5,21 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Products;
 use Gloudemans\Shoppingcart\Facades\Cart;
+use Livewire\WithPagination;
 
 class ProductTables extends Component
 {
-    public $products;
-    public $carts;
 
+    public $products;
     public function mount(){
         $this->products=Products::all()->where('product_status',1);
-        $this->carts = Cart::content();
+
     }
+
     public function render()
     {
-        return view('livewire.product-tables');
+        $cart= Cart::content();
+        return view('livewire.product-tables',compact('cart'));
     }
 
     public function addToCart($product_id)

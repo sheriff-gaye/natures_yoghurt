@@ -2,8 +2,8 @@
 
 @section('dashboard_content')
     <div class="container">
-        <div class="card shadow mb-4">
-            <div class="card-header py-3 d-flex">
+        <div class="mb-4 shadow card">
+            <div class="py-3 card-header d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
                     {{ __('PRODUCTS') }}
                 </h6>
@@ -27,8 +27,6 @@
                             <th>QUANTITY</th>
                             <th>Price</th>
                             <th>Category</th>
-                            <th>Created At</th>
-                            <th>Updated At</th>
                             <th>Status</th>
                             <th class="text-center" style="width: 30px;">Action</th>
                         </tr>
@@ -51,11 +49,9 @@
                                 <td>GH₵{{ number_format($product->product_price) }}</td>
 
                                 <td>{{$product->category->category_name}}</td>
-                                <td>{{$product->created_at->format('Y-m-d')}}</td>
-                                <td>{{$product->updated_at->diffForHumans()}}</td>
                                 <td>
                                     @if ($product->product_status == '1')
-                                        <span class="btn btn-success  btn-sm">{{ __('Active')}}</span>
+                                        <span class="btn btn-success btn-sm">{{ __('Active')}}</span>
                                     @elseif ($product->product_status == '0')
                                         <span class="btn btn-warning btn-sm">{{__('In Active')}}</span>
                                     @endif

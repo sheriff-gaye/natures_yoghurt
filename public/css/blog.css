@@ -33,7 +33,6 @@
 
 .post_thumbnail img{
     border-radius: var(--card-border-radius-5) 0;
-    border: 2px  solid var(--color-primary);
 }
 .post_info p a{
     color: var(--color-primary);
@@ -68,6 +67,17 @@
     overflow: hidden;
     border-radius: var(--card-border-radius-3);
     border: 1px solid rgb(158, 154, 154);
+}
+
+
+.featured_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.featured .post_thumbnail {
+    height: fit-content;
 }
 
 .posts_container {
@@ -131,14 +141,20 @@ h3 {
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
     }
+    .featured_container {
+        gap: 3rem;
+    }
 
 }
 
-
 @media screen and (max-width:600px) {
-
     h1 {
         font-size: 2rem;
+    }
+
+    .featured_container {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
     .posts_container {

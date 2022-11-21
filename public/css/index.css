@@ -152,6 +152,7 @@ p {
     background-color: transparent;
     color: var(--color-primary);
 }
+
 .btn-primary:hover{
     background: transparent;
     color: var(--color-primary);
@@ -857,6 +858,11 @@ sup {
     border-radius: var(--card-border-radius-2);
     cursor: pointer;
     transition: var(--transition);
+    color: var(--color-white);
+}
+
+.btn-added {
+    background-color:var(--color-green-contact);
     color: var(--color-white);
 }
 

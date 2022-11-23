@@ -34,11 +34,11 @@
 .post_thumbnail img{
     border-radius: var(--card-border-radius-5) 0;
 }
-.post_info p a{
+.post_info .read_more{
     color: var(--color-primary);
 }
 
-.post_info p :hover a{
+.post_info .read_more:hover {
     padding-left: 1rem;
     transition: all 400ms ease;
 }
@@ -69,22 +69,11 @@
     border: 1px solid rgb(158, 154, 154);
 }
 
-
-.featured_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-.featured .post_thumbnail {
-    height: fit-content;
-}
-
 .posts_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
-    margin-top:-3.2rem ;
+    margin-top:-10.5rem ;
 }
 
 .category_buttons {
@@ -141,25 +130,15 @@ h3 {
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
     }
-    .featured_container {
-        gap: 3rem;
-    }
-
 }
 
 @media screen and (max-width:600px) {
     h1 {
         font-size: 2rem;
     }
-
-    .featured_container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
     .posts_container {
         grid-template-columns: 1fr;
-        margin-top: 2rem;
+        margin-top:-4.3rem;
     }
     .singlepost_container{
         background: transparent;

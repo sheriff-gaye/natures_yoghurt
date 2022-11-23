@@ -2,13 +2,13 @@
 
 @section('dashboard_content')
     <div class="container">
-        <div class="card shadow mb-4">
-            <div class="card-header py-3 d-flex">
+        <div class="mb-4 shadow card">
+            <div class="py-3 card-header d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
                     {{ __('Update Post') }}
                 </h6>
                 <div class="ml-auto">
-                    <a href="{{route('blog.index')}}" class="btn btn-primary">
+                    <a href="{{ route('blog.index') }}" class="btn btn-primary">
                         <span class="icon text-white-50">
                             <i class="fa fa-home"></i>
                         </span>
@@ -17,15 +17,18 @@
                 </div>
             </div>
             <div class="card-body">
-                <form action="{{route('blog.update',$blog->id)}}"  enctype="multipart/form-data" method="POST">
+                <form action="{{ route('blog.update', $blog->id) }}" enctype="multipart/form-data" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
                                 <label for="blog_title">Blog Title</label>
-                                <input class="form-control" id="blog_title" type="text" name="blog_title" value="{{ old('blog_title',$blog->blog_title) }}">
-                                @error('blog_title')<span class="text-danger">{{ $message }}</span>@enderror
+                                <input class="form-control" id="blog_title" type="text" name="blog_title"
+                                    value="{{ old('blog_title', $blog->blog_title) }}">
+                                @error('blog_title')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
 
@@ -34,10 +37,16 @@
                                 <label for="blog_status">Blog Status</label>
                                 <select name="blog_status" id="blog_status" class="form-control">
                                     <option value="">- Select Status-</option>
-                                    <option value="1" {{ old('blog_status') || $blog->blog_status == "1" ? 'selected' : null }}>Active</option>
-                                    <option value="0" {{ old('blog_status') || $blog->blog_status == "0" ? 'selected' : null }}>Inactive</option>
+                                    <option value="1"
+                                        {{ old('blog_status') || $blog->blog_status == '1' ? 'selected' : null }}>Active
+                                    </option>
+                                    <option value="0"
+                                        {{ old('blog_status') || $blog->blog_status == '0' ? 'selected' : null }}>Inactive
+                                    </option>
                                 </select>
-                                @error('blog_status')<span class="text-danger">{{ $message }}</span>@enderror
+                                @error('blog_status')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
                     </div>
@@ -45,9 +54,11 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                            <label for="blog_description" class="text-small">{{ __('Blog Description') }}</label>
-                            <textarea name="blog_description" rows="3" class="form-control summernote">{!! old('blog_description',$blog->blog_description) !!}</textarea>
-                            @error('blog_description')<span class="text-danger">{{ $message }}</span>@enderror
+                                <label for="blog_description" class="text-small">{{ __('Blog Description') }}</label>
+                                <textarea name="blog_description" rows="3" class="form-control">{!! old('blog_description', $blog->blog_description) !!}</textarea>
+                                @error('blog_description')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
                             </div>
                         </div>
                     </div>
@@ -58,17 +69,20 @@
                             <label for="images">{{ __('Blog Image') }}</label>
                             @if ($blog->blog_image)
                                 <img class="mb-2" src="{{ asset('images') }}/{{ $blog->blog_image }}"
-                                    alt="{{ $blog->blog_title}}" width="100" height="100">
+                                    alt="{{ $blog->blog_title }}" width="100" height="100">
                             @else
                             @endif
                             <br>
                             <div class="file-loading">
-                                <input type="file" name="blog_image" id="product-images" class="file-input-overview" multiple="multiple">
+                                <input type="file" name="blog_image" id="product-images" class="file-input-overview"
+                                    multiple="multiple">
                             </div>
-                            @error('blog_image')<span class="text-danger">{{ $message }}</span>@enderror
+                            @error('blog_image')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
                     </div>
-                    <div class="form-group pt-4">
+                    <div class="pt-4 form-group">
                         <button class="btn btn-primary" type="submit" name="submit">{{ __('Save') }}</button>
                     </div>
                 </form>
@@ -84,21 +98,8 @@
 @push('script-alt')
     <script src="{{ asset('backend/vendor/select2/js/select2.full.min.js') }}"></script>
     <script>
-        $(function () {
-            // summernote
-            $('.summernote').summernote({
-                tabSize: 2,
-                height: 200,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'underline', 'clear']],
-                    ['color', ['color']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['table', ['table']],
-                ]
-            })
+        $(function() {
 
-            // upload images
             $("#product-images").fileinput({
                 theme: "fas",
                 maxFileCount: 5,
@@ -124,7 +125,7 @@
 
                 // `data.children` contains the actual options that we are matching against
                 var filteredChildren = [];
-                $.each(data.children, function (idx, child) {
+                $.each(data.children, function(idx, child) {
                     if (child.text.toUpperCase().indexOf(params.term.toUpperCase()) == 0) {
                         filteredChildren.push(child);
                     }
@@ -154,4 +155,3 @@
         })
     </script>
 @endpush
-

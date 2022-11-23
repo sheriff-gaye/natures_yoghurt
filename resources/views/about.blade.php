@@ -58,14 +58,12 @@
                     <div class="services_card">
                         <span class="services_card-icon"><i class="uil uil-layers-alt"></i></span>
                         <h5>Safe Formulas</h5>
-                        <!-- <a href="$">Discover More <i class="uil uil-arrow-right"></i></a> -->
                         <p>We make sure everything we sell is high quality and safe for consumption.</p>
                     </div>
 
                     <div class="services_card">
                         <span class="services_card-icon"><i class="uil uil-browser"></i></span>
                         <h5>Highly Effective</h5>
-                        <!-- <a href="$">Discover More <i class="uil uil-arrow-right"></i></a> -->
                         <p>Our excellent yoghurt products have been created, tested and certified by the food and drugs
                             board ( FDA,
                             Ghana)</p>
@@ -74,7 +72,6 @@
                     <div class="services_card">
                         <span class="services_card-icon"><i class="uil uil-shopping-cart"></i></span>
                         <h5>Ethically Sourced</h5>
-                        <!-- <a href="$">Discover More <i class="uil uil-arrow-right"></i></a> -->
                         <p>You can sleep easy knowing we only use ethically sourced natural raw materials from the local
                             farmers.
                         </p>
@@ -88,7 +85,7 @@
         <h2>Why Nature's Yoghurt</h2>
         <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repellendus.</p> -->
 
-        <div class=" container testimonial_container">
+        <div class="container testimonial_container">
             <article class="testimonial">
                 <p>Our milk used in production is fresh and sourced from cow milk from the farm.</p>
             </article>

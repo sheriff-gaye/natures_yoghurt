@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
             $table->string('review_name');
-            $table->string('review_occupation');
+            $table->text('review_occupation');
             $table->text('review_description');
             $table->string('review_image');
             $table->boolean('review_status')->default(false);

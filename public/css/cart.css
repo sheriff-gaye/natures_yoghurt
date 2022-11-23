@@ -96,7 +96,9 @@ tbody tr td img {
 
 
 .btn {
-    padding: .8rem .8rem;
+    display: inline-block;
+    width: fit-content;
+    padding: .6rem .6rem;
     background: var(--color-primary);
     color: var(--color-white);
     border: none;
@@ -123,6 +125,7 @@ tbody tr td img {
 
 .total-details {
     border: 1px solid gray;
+    max-width: fit-content;
 }
 
 .total-details a{
@@ -164,19 +167,21 @@ tbody tr td img {
 }
 
 @media screen and (max-width:600px) {
+    .btn {
+        padding: .5rem;
+        display: inline;
+
+    }
 
     .cupon_container {
         display:flex;
-        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
 
     }
 
     #cart-container h2 {
         margin-top: -4rem;
-    }
-
-    #cart-container table td, th {
-        width: 105px;
     }
 
     #cart-container{

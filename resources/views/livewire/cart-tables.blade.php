@@ -46,7 +46,7 @@
                     </tr>
                 @empty
                     <tr>
-                        <td colspan="6">No Item In Cart</td>
+                        <td colspan="6"><h4>No Item In Cart <i class="uil uil-sad" style="font-size: 2rem"></i></h4></td>
                     </tr>
                 @endforelse
 

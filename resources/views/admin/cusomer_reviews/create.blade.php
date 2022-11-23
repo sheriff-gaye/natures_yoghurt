@@ -2,8 +2,8 @@
 
 @section('dashboard_content')
     <div class="container">
-        <div class="card shadow mb-4">
-            <div class="card-header py-3 d-flex">
+        <div class="mb-4 shadow card">
+            <div class="py-3 card-header d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
                     {{ __('Create Review') }}
                 </h6>
@@ -51,7 +51,7 @@
                         <div class="col-12">
                             <div class="form-group">
                             <label for="review_description" class="text-small">{{ __('Review Description') }}</label>
-                            <textarea name="review_description" rows="3" class="form-control summernote">{!! old('review_description') !!}</textarea>
+                            <textarea name="review_description" rows="3" class="form-control">{!! old('review_description') !!}</textarea>
                             @error('review_description')<span class="text-danger">{{ $message }}</span>@enderror
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                             @error('review_image')<span class="text-danger">{{ $message }}</span>@enderror
                         </div>
                     </div>
-                    <div class="form-group pt-4">
+                    <div class="pt-4 form-group">
                         <button class="btn btn-primary" type="submit" name="submit">{{ __('Save') }}</button>
                     </div>
                 </form>
@@ -85,20 +85,6 @@
     <script src="{{ asset('backend/vendor/select2/js/select2.full.min.js') }}"></script>
     <script>
         $(function () {
-            // summernote
-            $('.summernote').summernote({
-                tabSize: 2,
-                height: 200,
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'underline', 'clear']],
-                    ['color', ['color']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['table', ['table']],
-
-                ]
-            })
-
             // upload images
             $("#product-images").fileinput({
                 theme: "fas",

@@ -7,3 +7,5 @@
 @livewire('product-tables')
 
 @endsection
+
+

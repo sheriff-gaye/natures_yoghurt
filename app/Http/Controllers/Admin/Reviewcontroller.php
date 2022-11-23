@@ -44,7 +44,7 @@ class Reviewcontroller extends Controller
         $this->validate($request,[
             'review_name'=>'required',
             'review_occupation'=>'required',
-            'review_description'=>'required|max:50',
+            'review_description'=>'required',
             'review_status'=>'required',
             'review_image'=>'required|mimes:png,jpg,jpeg',
 
@@ -109,7 +109,7 @@ class Reviewcontroller extends Controller
         $this->validate($request,[
             'review_name'=>'required',
             'review_occupation'=>'required',
-            'review_description'=>'required|max:50',
+            'review_description'=>'required',
             'review_status'=>'required',
             'review_image'=>'mimes:png,jpg,jpeg'
         ]);

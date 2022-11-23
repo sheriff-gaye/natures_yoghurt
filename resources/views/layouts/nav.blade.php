@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  <link rel="stylesheet" href="{{asset('css/index.css')}}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:wght@200;300;400;500;600&display=swap"
     rel="stylesheet" />
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="icon" href="./images/Yoghurt.jpg">
   <link rel="preload" href="{{asset('images/p3.jpg')}}" as="image">
+  @vite('public/css/index.css')
   <title>Natures Specialty</title>
   @livewireStyles
 </head>
@@ -31,8 +32,8 @@
       <ul class="nav_menu">
         <li><a href="{{route('website_home')}}">HOME</a></li>
         <li><a href="{{route('about')}}">ABOUT</a></li>
-        <li><a href="{{route('shop')}}">SHOP</a></li>
         <li><a href="{{route('blog')}}">BLOG</a></li>
+        <li><a href="{{route('shop')}}">SHOP</a></li>
         <li><a href="{{route('login')}}">LOGIN</a></li>
       </ul>
 
@@ -121,8 +122,7 @@
     });
 
   </script>
-<script src="{{asset('js/app.js')}}"></script>
-<script src="{{asset('js/products.js')}}"></script>
+@vite('public/js/app.js')
 </body>
 
 

@@ -38,8 +38,8 @@ class Blogcontroller extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'blog_title'=>'required|max:25',
-            'blog_description'=>'required|max:200',
+            'blog_title'=>'required',
+            'blog_description'=>'required',
             'blog_status'=>'required',
             'blog_image'=>'required|mimes:png,jpg,jpeg',
 
@@ -100,8 +100,8 @@ class Blogcontroller extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'blog_title'=>'required"max:25',
-            'blog_description'=>'required|max:200',
+            'blog_title'=>'required',
+            'blog_description'=>'required',
             'blog_status'=>'required',
             'blog_image'=>'mimes:png,jpg,jpeg',
 

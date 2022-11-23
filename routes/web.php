@@ -23,6 +23,7 @@ use App\Http\Controllers\Admin\Reviewcontroller;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Terms\Privacycontroller;
 use App\Http\Controllers\Admin\Categorycontroller;
+use App\Http\Controllers\Testcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,27 +53,12 @@ Route::get('/terms',[Privacycontroller::class,'terms'])->name('terms');
 
 Route::get('/return',[Privacycontroller::class,'returns'])->name('returns');
 
-
-Route::get('/counter',[Counter::class,'render'])->name('testing');
-
-// Route::get('/shop', [ShopProducts::class,'render'])->name('shop');
-// Route::post('/shop{id}',[ShopProducts::class,'addToCart'])->name('engine');
-
 Route::resource('/cart', Cartcontroller::class);
 
-Route::post('/incqty/{rowId}',[Qtycontroller::class,'increase'])->name('increase');
-
-Route::post('/decqty/{rowId}',[Qtycontroller::class,'decrease'])->name('decrease');
 
 Auth::routes(['verify' => true]);
 
 Route::get('/logout',[Logoutcontroller::class,'index'])->name('go_out');
-
-Route::get('/payment',[Paymentcontroller::class,'index'])->name('payment');
-
-
-
-// Route::prefix('admin')->group(function () {
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
@@ -91,4 +77,7 @@ Route::prefix('admin')->group(function () {
 
 
 });
+
+
+Route::get('/test',[Testcontroller::class,'index'])->name('test');
 

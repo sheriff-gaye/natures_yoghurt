@@ -8,7 +8,7 @@
                     <small>Yogurts Beyond Taste</small>
                     <i class="uil uil-glass-martini"></i>
                 </div>
-                <h1>Natures Yoghurt</h1>
+                <h1>Natures</h1>
                 <p>
                     Nature's Yoghurt Prides itself as one of the best yoghurt producers in Ghana and our customers can
                     attest to
@@ -16,7 +16,7 @@
 
                 </p>
                 <div class="cta">
-                    <a href="product.html" class="btn btn-primary">See Products <i class="uil uil-shopping-cart"></i></a>
+                    <a href="{{route('shop')}}" class="btn btn-primary">See Products <i class="uil uil-shopping-cart"></i></a>
                 </div>
             </div>
 
@@ -43,7 +43,6 @@
                         laboriosam reiciendis vitae, perferendis maxime aspernatur eveniet a suscipit error. Dolores
                         mollitia iure
                         quam magnam quisquam assumenda magni nobis quas eum sed! Suscipit, at ab?</p>
-                    {{-- <a href="#" class="btn btn-primary">Read More</a> --}}
                 </div>
             </article>
 
@@ -56,7 +55,6 @@
                         repellendus exercitationem ipsam possimus eveniet voluptas ducimus facere. Possimus adipisci totam
                         provident
                         aut aspernatur voluptates quos magnam excepturi? Quia.</p>
-                    {{-- <a href="#" class="btn btn-primary">Read More</a> --}}
                 </div>
                 <div class="image">
                     <img src="./images/grapes.jpg" alt="product_image1" />
@@ -110,7 +108,7 @@
                     <img src="{{ asset('images') }}/{{ $review->review_image }}" alt="{{$review->review_name}}">
                 </div>
                 <div class="details">
-                    <h3>Quick and Best Results.</h3>
+                    <h4>Customer Review</h4>
 
                     <p>{!! $review->review_description !!}</p>
                     <h5>{{$review->review_name}}</h5>

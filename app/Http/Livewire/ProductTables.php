@@ -5,21 +5,22 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Products;
 use Gloudemans\Shoppingcart\Facades\Cart;
-use Livewire\WithPagination;
 
 class ProductTables extends Component
 {
 
     public $products;
-    public function mount(){
-        $this->products=Products::all()->where('product_status',1);
+    public $search;
+    protected $queryString=['search'];
 
-    }
 
     public function render()
     {
         $cart= Cart::content();
-        return view('livewire.product-tables',compact('cart'));
+        $this->products=Products::where('product_name','like',"%{$this->search}%")->where('product_status',1)->latest()->get();
+        return view('livewire.product-tables',compact('cart'),[
+            'products'=>$this->products
+        ]);
     }
 
     public function addToCart($product_id)
@@ -34,6 +35,11 @@ class ProductTables extends Component
 
         $this->emit('cart_updated');
 
+    }
+
+
+    public function searchBtn(){
+        $this->products;
     }
 
 

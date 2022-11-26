@@ -1,9 +1,5 @@
+@extends('layouts.checkout')
 
-@extends('layouts.nav')
-
-
-@section('page-content')
-
-@livewire('cart-tables')
-
+@section('checkout-content')
+    @livewire('cart-tables')
 @endsection

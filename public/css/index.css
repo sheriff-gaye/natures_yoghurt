@@ -850,15 +850,15 @@ sup {
     color: black;
 }
 
-.courses #search_msg {
+#search_msg {
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -100px 0 0 -170px;
 }
 
-.courses #search_msg i {
-    font-size: 4rem;
+#search_msg i {
+    font-size: 3rem;
 }
 
 .muted {

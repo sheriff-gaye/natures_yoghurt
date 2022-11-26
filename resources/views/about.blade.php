@@ -65,8 +65,8 @@
                         <span class="services_card-icon"><i class="uil uil-browser"></i></span>
                         <h5>Highly Effective</h5>
                         <p>Our excellent yoghurt products have been created, tested and certified by the food and drugs
-                            board ( FDA,
-                            Ghana)</p>
+                            board  FDA,
+                            Ghana</p>
                     </div>
 
                     <div class="services_card">
@@ -83,7 +83,6 @@
 
     <section id="testimonials">
         <h2>Why Nature's Yoghurt</h2>
-        <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, repellendus.</p> -->
 
         <div class="container testimonial_container">
             <article class="testimonial">

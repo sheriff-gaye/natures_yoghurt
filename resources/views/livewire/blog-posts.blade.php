@@ -38,7 +38,7 @@
 
                 </article>
                 @empty
-                <h3 id="search_msg">Oops, No Results Found! <i class="uil uil-sad"></i></h3>
+                <h4 id="search_msg">Oops, No Results Found! <i class="uil uil-sad"></i></h4>
             @endforelse
         </div>
     </section>

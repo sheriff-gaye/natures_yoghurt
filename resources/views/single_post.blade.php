@@ -25,7 +25,6 @@
         <p>{!! $blog->blog_description !!}</p>
         <a href="{{route('blog')}}" class="btn btn-primary">Back</i></a>
 
-
     </div>
 </section>
 <!--single post section ends here-->

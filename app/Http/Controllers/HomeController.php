@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Orders;
 use App\Models\Products;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -26,7 +27,8 @@ class HomeController extends Controller
     public function index()
     {
         $products=Products::all();
+        $orders=Orders::all();
         $users=User::latest()->simplePaginate(5);
-        return view('admin.index',compact('products','users'));
+        return view('admin.index',compact('products','users','orders'));
     }
 }

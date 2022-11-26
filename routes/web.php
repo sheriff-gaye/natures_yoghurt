@@ -1,29 +1,33 @@
 <?php
 
+use App\Mail\Testmail;
 use App\Http\Livewire\Counter;
 use App\Http\Livewire\CartTables;
 use App\Http\Livewire\CartCounter;
 use App\Http\Livewire\ShopProducts;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Qtycontroller;
 use App\Http\Controllers\Cartcontroller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Shopcontroller;
+use App\Http\Controllers\Testcontroller;
 use App\Http\Controllers\Paymentcontroller;
+
 use App\Http\Controllers\Websitecontroller;
+use App\Http\Controllers\Checkoutcontroller;
 use App\Http\Controllers\Dashboardcontroller;
 use App\Http\Controllers\Admin\Blogcontroller;
-
 use App\Http\Controllers\shophandlecontroller;
 use App\Http\Controllers\Admin\Staffcontroller;
 use App\Http\Controllers\Admin\Userscontroller;
 use App\Http\Controllers\Auth\Logoutcontroller;
+use App\Http\Controllers\Admin\Orderscontroller;
 use App\Http\Controllers\Admin\Reviewcontroller;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Terms\Privacycontroller;
 use App\Http\Controllers\Admin\Categorycontroller;
-use App\Http\Controllers\Testcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,6 +67,7 @@ Route::get('/logout',[Logoutcontroller::class,'index'])->name('go_out');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('admin')->group(function () {
+
     Route::resource('/products',ProductController::class);
 
     Route::resource('/category',Categorycontroller::class);
@@ -75,9 +80,14 @@ Route::prefix('admin')->group(function () {
 
     Route::resource('/blog' ,Blogcontroller::class);
 
+    Route::resource('/orders',Orderscontroller::class);
+
 
 });
 
 
-Route::get('/test',[Testcontroller::class,'index'])->name('test');
+Route::get('/checkout',[Checkoutcontroller::class,'index'])->name('checkout');
 
+Route::get('/mail',function(){
+    Mail::to('sheriffgaye@gmail.com')->send(new Testmail());
+});

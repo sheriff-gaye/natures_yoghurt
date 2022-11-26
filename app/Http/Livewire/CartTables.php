@@ -22,6 +22,8 @@ class CartTables extends Component
         $qty=$product->qty+1;
         Cart::update($rowId, $qty);
 
+
+
     }
 
     public function decrease($rowId){
@@ -39,6 +41,8 @@ class CartTables extends Component
         }
 
         Cart::update($rowId, $qty);
+
+
     }
 
     public function destroy($rowId)

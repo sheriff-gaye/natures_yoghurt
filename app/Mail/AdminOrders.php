@@ -3,14 +3,13 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
-use Gloudemans\Shoppingcart\Facades\Cart;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\SerializesModels;
 
-class OrderReceived extends Mailable
+class AdminOrders extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -22,12 +21,20 @@ class OrderReceived extends Mailable
     protected $full_name;
     protected $email;
     protected $address;
+    protected $city;
+    protected $phone;
+    protected $payment;
+    protected $info;
 
-    public function __construct($full_name,$email,$address)
+    public function __construct($full_name,$email,$address,$city,$phone,$payment,$info)
     {
         $this->full_name = $full_name;
         $this->email=$email;
         $this->address=$address;
+        $this->city=$city;
+        $this->phone=$phone;
+        $this->payment=$payment;
+        $this->info=$info;
     }
 
     /**
@@ -38,7 +45,7 @@ class OrderReceived extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Order Received',
+            subject: 'Admin Orders',
         );
     }
 
@@ -49,15 +56,17 @@ class OrderReceived extends Mailable
      */
     public function content()
     {
-        $carts=Cart::content();
         return new Content(
-            view: 'emails.order',
+            view: 'emails.adminorders',
             with: [
                 'Name' => $this->full_name,
                 'Email' => $this->email,
-                'Address'=>$this->address
+                'Address'=>$this->address,
+                'City'=>$this->city,
+                'Phone'=>$this->phone,
+                'Payment'=>$this->payment,
+                'Info'=>$this->info
             ],
-
         );
     }
 

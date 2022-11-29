@@ -12,7 +12,6 @@ use App\Http\Controllers\Qtycontroller;
 use App\Http\Controllers\Cartcontroller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Shopcontroller;
-use App\Http\Controllers\Testcontroller;
 use App\Http\Controllers\Paymentcontroller;
 
 use App\Http\Controllers\Websitecontroller;
@@ -28,6 +27,7 @@ use App\Http\Controllers\Admin\Reviewcontroller;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Terms\Privacycontroller;
 use App\Http\Controllers\Admin\Categorycontroller;
+use App\Http\Controllers\Testingcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,6 +88,4 @@ Route::prefix('admin')->group(function () {
 
 Route::get('/checkout',[Checkoutcontroller::class,'index'])->name('checkout');
 
-Route::get('/mail',function(){
-    Mail::to('sheriffgaye@gmail.com')->send(new Testmail());
-});
+// Route::get('/test',[Testingcontroller::class,'index']);

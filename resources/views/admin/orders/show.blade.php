@@ -46,7 +46,9 @@
                         <tr>
                             <th>Description</th>
                             <td colspan="3">{{ $orders->info }}</td>
+
                         </tr>
+
                         @endif
                     </tbody>
                 </table>

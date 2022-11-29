@@ -2,15 +2,21 @@
 
 namespace App\Http\Livewire;
 
-use App\Mail\OrderReceived;
-use App\Mail\Testmail;
+use App\Mail\AdminOrders;
 use App\Models\Orders;
 use Livewire\Component;
+use App\Mail\OrderReceived;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 use Gloudemans\Shoppingcart\Facades\Cart;
 
 class Checkout extends Component
 {
+
+    public $productname;
+    public $price;
+    public $qty;
+    public $total;
     public $full_name;
     public $address;
     public $city;
@@ -31,6 +37,7 @@ class Checkout extends Component
 
     public function render()
     {
+
         $carts=Cart::content();
         return view('livewire.checkout',compact('carts'));
     }
@@ -38,9 +45,12 @@ class Checkout extends Component
 
     public function order(){
 
-        // $this->validate();
-
+        $this->validate();
         $values =([
+            "productname"=>$this->productname,
+            "price"=>$this->price,
+            "qty"=>$this->qty,
+            "total"=>$this->total,
             "full_name"=>$this->full_name,
             "address"=>$this->address,
             "city"=>$this->city,
@@ -52,13 +62,27 @@ class Checkout extends Component
             "info"=>$this->info
         ]);
 
-        // Orders::create($values);
-        // Cart::destroy();
-        // $this->emit('cart_updated');
-        // Mail::to($this->email)->send(new OrderReceived($this->full_name,$this->email,$this->address));
-        // return redirect()->route('shop');
+        Orders::create($values);
+        Mail::to($this->email)->send(new OrderReceived(
+            $this->full_name,
+            $this->email,
+            $this->address
+        ));
+        Mail::to('naturesyoghurt@gmail.com')->send(new AdminOrders(
+            $this->full_name,
+            $this->email,
+            $this->address,
+            $this->city,
+            $this->phone,
+            $this->payment,
+            $this->info
+        ));
 
-        dd($this->full_name);
+        Cart::destroy();
+        $this->emit('cart_updated');
+        return redirect()->route('shop');
+
+
 
 
     }

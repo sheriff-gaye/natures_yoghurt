@@ -3,17 +3,24 @@
 
 
 @section('checkout-content')
-
-<link rel="stylesheet" href="{{asset('css/index.css')}}">
-
-    <h3>Dear {{ $Name }},</h3>
-    <p>We have successfully received your order, and we look forward to seeing you soon.
-        <br>
-        Thank you for choosing our product. We appreciate your trust and we'll do our best to meet your expectations.
+    <h3>Dear Natures Yogurt,</h3>
+    <p>Customer name {{$Name}} has placed an order for the item listed below. Confirm everything thoroughly and get back to
+        them . we have sent {{$Name}} an automatic order received confirmation message.
     </p>
+    <h4>CUSTOMER DETAILS</h4>
+    <p>NAME : {{$Name}}</p>
+    <p>EMAIL: {{$Email}}</P>
+    <p>PHONE: {{$Phone}}</p>
+    <p>ADDRESS: {{$Address}}</p>
+    <p>CITY: {{$City}}</p>
+    <p>PAYMENT METHOD: {{$Payment}}</p>
+    @if($Info)
+    <p>ADDITIONAL INFO: {{$Info}}</p>
+    @endif
 
-    <div class="mb-20 text-center">
-        <h4>Your Order Summary</h4>
+
+    <div class="mb-20 ">
+        <h4><span class="uppercase">{{$Name}}'s</span> ORDER SUMMARY</h4>
     </div>
     <div class="text-center table-responsive order_table">
         <table class="table" align="center" border="1" style="border-collapse: collapse">
@@ -45,7 +52,5 @@
 
             </tbody>
         </table>
-        <h5>Best regards,</h5>
-        <h5>Natures Yogurt.</h5>
     </div>
 @endsection

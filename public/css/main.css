@@ -93,27 +93,27 @@ input:focus::-moz-placeholder {
 }
 
 a {
-  color: #F15412;
+  color: #c50c3;
 }
 
 a:hover {
-  color: #F15412;
+  color: #c50c3
 }
 
 /*--- Common Classes---------------------*/
 ::-moz-selection {
-  background: #F15412;
+  background: #c50c3
   /* WebKit/Blink Browsers */
   color: #fff;
 }
 ::selection {
-  background: #F15412;
+  background: #c50c3
   /* WebKit/Blink Browsers */
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #F15412;
+  background: #c50c3
   /* Gecko Browsers */
   color: #fff;
 }
@@ -244,7 +244,7 @@ input[type=number]:focus,
 }
 
 .text-brand {
-  color: #F15412 !important;
+  color: #c50c3 !important;
 }
 
 .text-primary {
@@ -288,7 +288,7 @@ input[type=number]:focus,
 }
 
 .bg-brand {
-  background-color: #F15412 !important;
+  background-color: #c50c3portant;
 }
 
 .bg-primary {
@@ -413,7 +413,7 @@ input[type=number]:focus,
 }
 
 .border-brand {
-  border-color: #F15412 !important;
+  border-color: #c50c3 !important;
 }
 
 .border-muted {
@@ -692,11 +692,11 @@ strong,
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #F15412;
+  background-color: #c50c3;
 }
 
 .section-title span {
-  color: #F15412;
+  color: #c50c3;
 }
 
 h3.section-title {
@@ -8456,7 +8456,7 @@ span.fi-rs-apps {
 }
 
 /***************************
-    Page section margin 
+    Page section margin
 ****************************/
 .mtb-0 {
   margin: 0;
@@ -9905,7 +9905,7 @@ span.fi-rs-apps {
 }
 
 .search-style-1 form {
-	width: 75%;	
+	width: 75%;
 }
 .header-info-right a{
     padding-left:20px;
@@ -9942,6 +9942,6 @@ span.fi-rs-apps {
 {
 	.mob-app{
 		padding-left:3%;
-	}  
+	}
 }
 

@@ -95,7 +95,7 @@
                                             <tr>
                                                 <th>Total</th>
                                                 <td colspan="3" class="product-subtotal"><span
-                                                        class="font-xl text-brand fw-900">GH₵{{ Cart::total() }}</span>
+                                                        class="font-xl text-brand fw-900 text-[#c50c37]">GH₵{{ Cart::total() }}</span>
                                                 </td>
                                             </tr>
 
@@ -121,22 +121,21 @@
                                         <div class="custome-radio">
 
                                             <input class="form-check-input" type="radio" name="payment"
-                                                id="exampleRadios4" value="momo" wire:model='payment'>
+                                                id="momo" value="momo" wire:model='payment'>
 
-                                            <label class="form-check-label" for="exampleRadios4"
+                                            <label class="form-check-label" for="momo"
                                                 data-bs-toggle="collapse" data-target="#cardPayment"
                                                 aria-controls="cardPayment" href="#collapsePassword">MOMO</label>
-                                        </div>
-
-                                        <div id="collapsePassword" class="form-group create-account collapse in">
-                                            <input required="" type="password" placeholder="Password"
-                                                name="password">
                                         </div>
 
                                         @error('payment')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>
+                                    @if($payment=='momo')
+                                    <p>Vodafone Momo :12345</p>
+                                    <p>MTN Momo: 3657</p>
+                                    @endif
 
                                 </div>
                                 <a class="btn btn-fill-out btn-block mt-30" style="background:#c50c37;border:none"

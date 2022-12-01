@@ -24,7 +24,7 @@ class Orderscontroller extends Controller
     public function index()
     {
 
-        $orders=Orders::latest()->get();
+        $orders=Orders::latest()->simplePaginate(5);
         return view('admin.orders.index',compact('orders'));
     }
 

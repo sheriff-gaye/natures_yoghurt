@@ -23,9 +23,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse($orders as $order)
+                        @forelse($orders as $key=>$order)
                             <tr class="text-center">
-                                <td>{{ $loop->iteration }}</td>
+                                <td>{{ $key +1  }}</td>
                                 <td><a href="{{ route('orders.show', $order->id) }}">{{$order->full_name}}</td></td>
                                 <td>{{$order->email}}</td>
                                 <td>{{$order->phone}}</td>
@@ -47,7 +47,7 @@
                         <tr>
                             <td colspan="12">
                                 <div class="float-right">
-                                    {{-- {!! $products->appends(request()->all())->links() !!} --}}
+                                    {!! $orders->appends(request()->all())->links() !!}
                                 </div>
                             </td>
                         </tr>

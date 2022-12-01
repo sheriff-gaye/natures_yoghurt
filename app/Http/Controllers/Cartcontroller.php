@@ -15,9 +15,7 @@ class Cartcontroller extends Controller
      */
     public function index()
     {
-        $carts=Cart::content();
-        $products=Products::all();
-        return view('cart',compact('carts','products'));
+        return view('cart');
     }
 
     /**

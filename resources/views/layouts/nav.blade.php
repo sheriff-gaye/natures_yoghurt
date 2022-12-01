@@ -19,6 +19,7 @@
   <link rel="icon" href="./images/Yoghurt.jpg">
   <link rel="preload" href="{{asset('images/p3.jpg')}}" as="image">
   @vite('public/css/index.css')
+  @livewireStyles
   <title>Natures Specialty</title>
   @livewireStyles
 </head>
@@ -123,6 +124,7 @@
 
   </script>
 @vite('public/js/app.js')
+@livewireScripts
 </body>
 
 

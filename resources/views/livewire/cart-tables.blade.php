@@ -82,7 +82,7 @@
 
                                             <tr>
                                                 <td>Total</td>
-                                                <td class="text-black font-xl fw-900 text-brand">GH₵{{ Cart::total() }}
+                                                <td class="font-xl fw-900 text-brand text-[#c50c37]">GH₵{{ Cart::total() }}
                                                 </td>
                                             </tr>
                                         </tbody>

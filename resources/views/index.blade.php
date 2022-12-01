@@ -299,17 +299,7 @@
             </aside>
 
 
-            <form action="" class="contact_form" method="POST">
-                <div class="form_name">
-                    <input type="text" name="name" placeholder="Full Name" required>
-
-                </div>
-                <input type="email" name="email" placeholder="Email" required>
-
-                <textarea name="Message" rows="5" placeholder="Message" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-
-            </form>
+          @livewire('contact')
         </div>
     </section>
 

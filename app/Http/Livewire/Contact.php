@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Livewire;
-use app\Models\Contact;
+
+use App\Mail\ContactAdmin;
 use Livewire\Component;
+use App\Models\ContactMe;
+use Illuminate\Support\Facades\Mail;
 
 class Contact extends Component
 {
@@ -17,7 +20,7 @@ class Contact extends Component
 
     protected $rules=[
         'full_name'=>'required',
-        'email'=>'required',
+        'email'=>'required|email',
         'message'=>'required'
     ];
 
@@ -29,9 +32,21 @@ class Contact extends Component
             "message"=>$this->message,
         ]);
 
-        Contact::create($values);
+        ContactMe::create($values);
+        Mail::to($this->email)->send(new ContactAdmin(
+            $this->full_name,
+            $this->email,
+            $this->message
+        ));
 
+        $this->full_name='';
+        $this->email='';
+        $this->message='';
 
-       
+    }
+
+    public function updated($property){
+
+        $this->validateOnly($property);
     }
 }

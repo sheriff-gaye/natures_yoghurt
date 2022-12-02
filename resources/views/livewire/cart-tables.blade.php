@@ -1,9 +1,6 @@
 
-
 <div>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.ico">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+
     <section class="mt-50 mb-50">
         <div class="container">
             <div class="row">

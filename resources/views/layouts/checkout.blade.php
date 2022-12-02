@@ -11,15 +11,14 @@
     <meta property="og:type" content="">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
-    {{-- <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.ico"> --}}
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="icon" href="./images/Yoghurt.jpg">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     @livewireStyles
 </head>
-
 
 <body>
     <style>

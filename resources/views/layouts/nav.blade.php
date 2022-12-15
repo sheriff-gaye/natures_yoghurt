@@ -102,7 +102,7 @@
 
     </div>
     <div class="footer_copyright">
-      <small>Copyright &copy; Nature Yogurt & Foods</small>
+      <small>Copyright &copy; Nature Specialty & Foods</small>
     </div>
   </footer>
 

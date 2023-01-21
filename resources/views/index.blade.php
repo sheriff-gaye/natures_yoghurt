@@ -57,7 +57,7 @@
                         aut aspernatur voluptates quos magnam excepturi? Quia.</p>
                 </div>
                 <div class="image">
-                    <img src="./images/grapes.jpg" alt="product_image1" />
+                    <img src='images/testing.jpg' alt="product_image1" />
                 </div>
 
             </article>

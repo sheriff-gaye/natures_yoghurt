@@ -108,11 +108,10 @@
 
     <!--teams strats here-->
     <section class="team">
+        @if($staffs->count()>=1)
         <h2>Meet Our Team</h2>
         <div class="container team_container">
             @foreach ($staffs as $staff )
-
-
             <article class="team_member">
                 <div class="team_member-image">
                     <img src="{{ asset('images') }}/{{ $staff->staff_image }}">
@@ -131,7 +130,9 @@
                 </div>
 
             </article>
+
             @endforeach
+            @endif
         </div>
     </section>
 @endsection

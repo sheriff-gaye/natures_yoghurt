@@ -16,7 +16,8 @@
 
                 </p>
                 <div class="cta">
-                    <a href="{{route('shop')}}" class="btn btn-primary">See Products <i class="uil uil-shopping-cart"></i></a>
+                    <a href="{{ route('shop') }}" class="btn btn-primary">See Products <i
+                            class="uil uil-shopping-cart"></i></a>
                 </div>
             </div>
 
@@ -35,7 +36,7 @@
 
             <article>
                 <div class="image">
-                    <img src="./images/p3.jpg" alt="product_image1" />
+                    <img src="./images/big_strawberry-removebg-preview.png" alt="product_image1" />
                 </div>
                 <div class="info">
                     <h2>Strawberry</h2>
@@ -57,7 +58,7 @@
                         aut aspernatur voluptates quos magnam excepturi? Quia.</p>
                 </div>
                 <div class="image">
-                    <img src='images/testing.jpg' alt="product_image1" />
+                    <img src='images/big_vanilla-removebg-preview (2).png' alt="product_image1" />
                 </div>
 
             </article>
@@ -81,7 +82,7 @@
             </div>
             <article>
                 <div class="image">
-                    <img src="./images/kiwi.jpg" alt="why-choose_us_image">
+                    <img src="./images/1674344102.png" alt="why-choose_us_image">
                 </div>
                 <div class="info">
                     <h4>Benefits of Taking Nature's Yogurt</h4>
@@ -102,19 +103,20 @@
         <div class="swiper-wrapper">
 
             @foreach ($reviews as $review)
+                <article class="swiper-slide">
+                    <div class="image">
+                        <img src="{{ asset('images') }}/{{ $review->review_image }}" alt="{{ $review->review_name }}">
+                    </div>
+                    <div class="details">
 
-            <article class="swiper-slide">
-                <div class="image">
-                    <img src="{{ asset('images') }}/{{ $review->review_image }}" alt="{{$review->review_name}}">
-                </div>
-                <div class="details">
-                    <h4>Customer Review</h4>
+                        <h4>Customer Review</h4>
 
-                    <p>{!! $review->review_description !!}</p>
-                    <h5>{{$review->review_name}}</h5>
-                    <small>{{$review->review_occupation}}</small>
-                </div>
-            </article>
+                        <p>{!! $review->review_description !!}</p>
+                        <h5>{{ $review->review_name }}</h5>
+                        <small>{{ $review->review_occupation }}</small>
+
+                    </div>
+                </article>
             @endforeach
 
         </div>
@@ -299,7 +301,7 @@
             </aside>
 
 
-          @livewire('contact')
+            @livewire('contact')
         </div>
     </section>
 

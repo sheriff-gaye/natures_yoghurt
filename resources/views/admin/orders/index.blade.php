@@ -20,6 +20,7 @@
                             <th>PAYMENT</th>
                             <th>QTY</th>
                             <th>AMOUNT</th>
+                            <th>ACTION</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,6 +37,19 @@
                                     11
                                 </td>
                                 <td>$33</td>
+                                <td>
+                                    <div class="btn-group btn-group-sm">
+                                        <a href="#" class="btn btn-sm btn-success">
+                                            <i class="uil uil-check"></i>
+                                        </a>
+                                        <form onclick="return confirm('are you sure !')" action="" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="ml-2 btn btn-sm btn-danger" type="submit"><i
+                                                    class="uil uil-multiply"></i></button>
+                                        </form>
+                                    </div>
+                                </td>
                             </tr>
                         @empty
                             <tr>
@@ -50,6 +64,7 @@
                                     {!! $orders->appends(request()->all())->links() !!}
                                 </div>
                             </td>
+
                         </tr>
                     </tfoot>
                 </table>

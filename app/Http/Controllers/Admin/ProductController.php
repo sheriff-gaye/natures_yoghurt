@@ -48,7 +48,7 @@ class ProductController extends Controller
             'product_quantity'=>'required|min:1',
             'product_description'=>'required|max:100',
             'product_status'=>'required',
-            'product_image'=>'required|mimes:png,jpg,jpeg',
+            'product_image'=>'required|mimes:png,jpg,jpeg|max:10000',
             'category_id'=>'required'
 
         ]);

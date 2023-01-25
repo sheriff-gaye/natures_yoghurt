@@ -86,7 +86,7 @@
                             <label for="images">{{ __('images') }}</label>
                             <br>
                             <div class="file-loading">
-                                <input type="file" name="product_image" id="product-images" class="file-input-overview" multiple="multiple">
+                                <input type="file" name="product_image" id="product-images" class="file-input-overview"  multiple="multiple">
                             </div>
                             @error('product_image')<span class="text-danger">{{ $message }}</span>@enderror
                         </div>

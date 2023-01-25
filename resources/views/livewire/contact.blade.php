@@ -1,5 +1,5 @@
 <div>
-
+<p style="text-align: center">send successfull</p>
     <form class="contact_form" >
         <div class="form_name">
             <input type="text" name="full_name" placeholder="Full Name" wire:model='full_name'>

@@ -66,7 +66,7 @@
           <li><a href="{{route('website_home')}}">Home</a></li>
           <li><a href="{{route('about')}}">About</a></li>
           <li><a href="{{route('shop')}}">Shop</a></li>
-          <li><a href="{{route('home')}}">Contact</a></li>
+          <li><a href="{{route('website_home')}}">Contact</a></li>
 
         </ul>
       </div>

@@ -58,7 +58,7 @@
                         aut aspernatur voluptates quos magnam excepturi? Quia.</p>
                 </div>
                 <div class="image">
-                    <img src='images/big_vanilla-removebg-preview (2).png' alt="product_image1" />
+                    <img src='images/new_vanilla.jpg' alt="product_image1" />
                 </div>
 
             </article>
@@ -82,7 +82,7 @@
             </div>
             <article>
                 <div class="image">
-                    <img src="./images/1674344102.png" alt="why-choose_us_image">
+                    <img src="./images/124.jpg" alt="why-choose_us_image">
                 </div>
                 <div class="info">
                     <h4>Benefits of Taking Nature's Yogurt</h4>

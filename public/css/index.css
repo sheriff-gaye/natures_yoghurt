@@ -1145,7 +1145,7 @@ section#testimonials {
     border-radius: 1rem 0 0 1rem;
     background: var(--color-about_primary);
     box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
-    right: -100%;
+    /* right: -100%; */
 }
 
 .team_socials a {

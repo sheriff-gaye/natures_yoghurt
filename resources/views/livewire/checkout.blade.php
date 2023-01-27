@@ -133,8 +133,10 @@
                                         @enderror
                                     </div>
                                     @if($payment=='momo')
-                                    <p>Vodafone Momo :12345</p>
-                                    <p>MTN Momo: 3657</p>
+                                    <img src="./images/payment.jpeg" alt="payment_deatails">
+                                    <p><b> Reach out to us if you have difficulty making a payment.</b></p>
+                                    <p>Email: naturesfoods.gh@gmail.com</p>
+                                    <p>Phone: +233261630600 / +233246459351</p>
                                     @endif
 
                                 </div>

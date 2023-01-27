@@ -65,7 +65,7 @@
                         <span class="services_card-icon"><i class="uil uil-browser"></i></span>
                         <h5>Highly Effective</h5>
                         <p>Our excellent yoghurt products have been created, tested and certified by the food and drugs
-                            board  FDA,
+                            board FDA,
                             Ghana</p>
                     </div>
 
@@ -108,31 +108,36 @@
 
     <!--teams strats here-->
     <section class="team">
-        @if($staffs->count()>=1)
-        <h2>Meet Our Team</h2>
-        <div class="container team_container">
-            @foreach ($staffs as $staff )
-            <article class="team_member">
-                <div class="team_member-image">
-                    <img src="{{ asset('images') }}/{{ $staff->staff_image }}">
-                </div>
+        @if ($staffs->count() >= 1)
+            <h2>Meet Our Team</h2>
+            <div class="container team_container">
+                @foreach ($staffs as $staff)
+                    <article class="team_member">
+                        <div class="team_member-image">
+                            <img src="{{ asset('images') }}/{{ $staff->staff_image }}">
+                        </div>
 
-                <div class="team_member-info">
-                    <h4>{{$staff->staff_name}}</h4>
-                    <p>{{$staff->staff_occupation}}</p>
-                </div>
+                        <div class="team_member-info">
+                            <h4>{{ $staff->staff_name }}</h4>
+                            <p>{{ $staff->staff_occupation }}</p>
+                        </div>
 
-                <div class="team_socials">
-                    <a href="http://instagram.com"><i class="uil uil-instagram"></i></a>
-                    <a href="https://twitter.com"><i class="uil uil-twitter"></i></a>
-                    <a href="https://linkedin.com"><i class="uil uil-linkedin"></i></a>
+                        <div class="team_socials">
+                            @if ($staff->staff_instagram)
+                                <a href="{{ $staff->staff_instagram }}" target="_blank"><i class="uil uil-instagram"></i></a>
+                            @endif
+                            @if ($staff->staff_twitter)
+                                <a href="{{ $staff->staff_twitter }}" target="_blank"><i class="uil uil-twitter"></i></a>
+                            @endif
+                            @if($staff->staff_linkedin)
+                            <a href="{{ $staff->staff_linkedin }}" target="_blank"><i class="uil uil-linkedin"></i></a>
+                            @endif
 
-                </div>
+                        </div>
 
-            </article>
-
-            @endforeach
-            @endif
+                    </article>
+                @endforeach
+        @endif
         </div>
     </section>
 @endsection

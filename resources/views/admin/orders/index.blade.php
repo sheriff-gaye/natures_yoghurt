@@ -20,7 +20,7 @@
                             <th>PAYMENT</th>
                             <th>QTY</th>
                             <th>AMOUNT</th>
-                            <th>ACTION</th>
+                            {{-- <th>ACTION</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -37,7 +37,7 @@
                                     11
                                 </td>
                                 <td>$33</td>
-                                <td>
+                                {{-- <td>
                                     <div class="btn-group btn-group-sm">
                                         <a href="#" class="btn btn-sm btn-success">
                                             <i class="uil uil-check"></i>
@@ -49,7 +49,7 @@
                                                     class="uil uil-multiply"></i></button>
                                         </form>
                                     </div>
-                                </td>
+                                </td> --}}
                             </tr>
                         @empty
                             <tr>

@@ -5,7 +5,7 @@
         <div class="container">
             <div class="info">
                 <div class="delivery">
-                    <small>Yogurts Beyond Taste</small>
+                    <small>yoghurt Beyond Taste</small>
                     <i class="uil uil-glass-martini"></i>
                 </div>
                 <h1>Natures</h1>
@@ -40,10 +40,10 @@
                 </div>
                 <div class="info">
                     <h2>Strawberry</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nostrum expedita aperiam et in optio
-                        laboriosam reiciendis vitae, perferendis maxime aspernatur eveniet a suscipit error. Dolores
-                        mollitia iure
-                        quam magnam quisquam assumenda magni nobis quas eum sed! Suscipit, at ab?</p>
+                    <p>Our strawberry flavour is smoother than Greek yoghurt and thicker than normal yoghurt. Strawberry
+                        yoghurt is thick and creamy, has no preservatives, is naturally low in sugar, and is a source of
+                        protein. The strawberry provides a mouthwatering smooth yoghurt that the whole family will
+                        appreciate.</p>
                 </div>
             </article>
 
@@ -51,11 +51,11 @@
 
                 <div class="info">
                     <h2>Vanilla</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque earum optio quis, autem, tempore ut ex
-                        error
-                        repellendus exercitationem ipsam possimus eveniet voluptas ducimus facere. Possimus adipisci totam
-                        provident
-                        aut aspernatur voluptates quos magnam excepturi? Quia.</p>
+                    <p>One of the most popular flavours of yoghurt is vanilla, which has a consistency that is both creamier
+                        and sweeter than fruit flavours. a delectable treat either on its own or dolloped on top of a hot
+                        fruit compote, depending on your preference. This low-fat yoghurt is great for both kids and
+                        grown-ups because it doesn't contain any added sugar. It does not contain any flavours or colours
+                        that are made with synthetic ingredients.</p>
                 </div>
                 <div class="image">
                     <img src='images/new_vanilla.jpg' alt="product_image1" />
@@ -85,8 +85,8 @@
                     <img src="./images/124.jpg" alt="why-choose_us_image">
                 </div>
                 <div class="info">
-                    <h4>Benefits of Taking Nature's Yogurt</h4>
-                    <p>Natures Yogurts is high in <b>Protein, Calcium, Vitamins</b>, and live culture, or probiotics, which
+                    <h4>Benefits of Taking Nature's yoghurt</h4>
+                    <p>Natures yoghurt is high in <b>Protein, Calcium, Vitamins</b>, and live culture, or probiotics, which
                         can enhance
                         the gut microbiota. These offer protection for bones and teeth and help prevent digestive problems.
                         Sleep
@@ -247,8 +247,8 @@
     <section id="cta">
         <div class="container">
             <div class="info">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem voluptas amet autem nobis sunt?
+                <h3>Creamy Delicious.</h3>
+                <p>Plain yogurt meets its match. Perfectly paired with fruit or honey.
                 </p>
             </div>
             <div class="image">
@@ -314,7 +314,7 @@
             <div class="clients">
                 <div><img src="./images/download.jpeg"></div>
                 <div><img src="./images/download (1).jpeg"></div>
-                <div><img src="./images/download (5).png"></div>
+                {{-- <div><img src="./images/download (5).png"></div> --}}
                 <div><img src="./images/download.png"></div>
 
 

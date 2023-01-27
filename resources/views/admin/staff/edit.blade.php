@@ -2,8 +2,8 @@
 
 @section('dashboard_content')
     <div class="container">
-        <div class="card shadow mb-4">
-            <div class="card-header py-3 d-flex">
+        <div class="mb-4 shadow card">
+            <div class="py-3 card-header d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
                     {{ __('Update Team Memeber') }}
                 </h6>
@@ -81,13 +81,13 @@
                             @else
                             @endif
                             <br>
-                            <div class="file-loading">
+                            {{-- <div class="file-loading"> --}}
                                 <input type="file" name="staff_image" id="product-images" class="file-input-overview" multiple="multiple">
-                            </div>
+                            {{-- </div> --}}
                             @error('staff_image')<span class="text-danger">{{ $message }}</span>@enderror
                         </div>
                     </div>
-                    <div class="form-group pt-4">
+                    <div class="pt-4 form-group">
                         <button class="btn btn-primary" type="submit" name="submit">{{ __('Save') }}</button>
                     </div>
                 </form>

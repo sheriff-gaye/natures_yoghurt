@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="icon" href="./images/Yoghurt.jpg">
   <link rel="preload" href="{{asset('images/p3.jpg')}}" as="image">
-  @vite('public/css/index.css')
+  <link rel="stylesheet" href='{{ asset('css/index.css') }}'>
   @livewireStyles
   <title>Natures Specialty</title>
   @livewireStyles
@@ -35,7 +35,7 @@
         <li><a href="{{route('about')}}">ABOUT</a></li>
         <li><a href="{{route('blog')}}">BLOG</a></li>
         <li><a href="{{route('shop')}}">SHOP</a></li>
-        <li><a href="{{route('login')}}">LOGIN</a></li>
+        {{-- <li><a href="{{route('login')}}">LOGIN</a></li> --}}
       </ul>
 
         @livewire('cart-counter')
@@ -54,7 +54,7 @@
 
       <div class="footer_1">
         <a href="index.html" class="footer_logo">
-          <h4>NATURES YOGURT</h4>
+          <h4>NATURES yoghurt</h4>
         </a>
         <p>Our Core Values: Leadership, Integrity, Dependability, Innovation and Ethics.</p>
       </div>
@@ -123,11 +123,10 @@
     });
 
   </script>
-@vite('public/js/app.js')
+<script src='{{ asset('js/app.js') }}'></script>
 @livewireScripts
 </body>
 
 
 </html>
-
 

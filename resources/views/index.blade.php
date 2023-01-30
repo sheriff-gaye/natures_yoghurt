@@ -36,7 +36,7 @@
 
             <article>
                 <div class="image">
-                    <img src="./images/big_strawberry-removebg-preview.png" alt="product_image1" />
+                    <img src="./images/big_strawberry-min.jpg" alt="product_image1" />
                 </div>
                 <div class="info">
                     <h2>Strawberry</h2>
@@ -58,7 +58,7 @@
                         that are made with synthetic ingredients.</p>
                 </div>
                 <div class="image">
-                    <img src='images/new_vanilla.jpg' alt="product_image1" />
+                    <img src='images/123.png' alt="product_image1" />
                 </div>
 
             </article>
@@ -264,7 +264,7 @@
         <div class="container contact_container">
             <aside class="contact_aside">
                 <div class="aside_image">
-                    <img src="./images/Message sent - 640x479.png">
+                    <img src="./images/contact.svg">
                 </div>
                 <h2>Contact Us</h2>
                 <p>Do not hesitate to reach out to us in case of any questions, clarifications and orders.

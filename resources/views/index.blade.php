@@ -8,7 +8,7 @@
                     <small>yoghurt Beyond Taste</small>
                     <i class="uil uil-glass-martini"></i>
                 </div>
-                <h1>Natures</h1>
+                <h1>Nature's</h1>
                 <p>
                     Nature's Yoghurt Prides itself as one of the best yoghurt producers in Ghana and our customers can
                     attest to
@@ -28,6 +28,33 @@
     </header>
 
     <!--end of header-->
+
+    <section id="why-choose_us">
+        <div class="container">
+            <div class="head">
+
+                <div class="left">
+                    <!-- <h4>Why Choose Us</h4> -->
+                    <h2>Learn More Details</h2>
+                </div>
+            </div>
+            <article>
+                <div class="image">
+                    <img src="./images/124.jpg" alt="why-choose_us_image">
+                </div>
+                <div class="info">
+                    <h4>Benefits of Taking Nature's yoghurt</h4>
+                    <p>Natures yoghurt is high in <b>Protein, Calcium, Vitamins</b>, and live culture, or probiotics, which
+                        can enhance
+                        the gut microbiota. These offer protection for bones and teeth and help prevent digestive problems.
+                        Sleep
+                        easy knowing we only use ethically sourced milk and minerals in all of our products.</p>
+                    {{-- <a href="#" class="btn btn-primary">Read More</a> --}}
+                </div>
+
+            </article>
+        </div>
+    </section>
 
     <!--begining of product section-->
     <section id="products">
@@ -58,7 +85,7 @@
                         that are made with synthetic ingredients.</p>
                 </div>
                 <div class="image">
-                    <img src='images/123.png' alt="product_image1" />
+                    <img src='images/big_vanilla-removebg-preview (2).png' alt="product_image1" />
                 </div>
 
             </article>
@@ -71,56 +98,35 @@
 
     <!--why choose us starts-->
 
-    <section id="why-choose_us">
-        <div class="container">
-            <div class="head">
 
-                <div class="left">
-                    <!-- <h4>Why Choose Us</h4> -->
-                    <h2>Learn More Details</h2>
-                </div>
-            </div>
-            <article>
-                <div class="image">
-                    <img src="./images/124.jpg" alt="why-choose_us_image">
-                </div>
-                <div class="info">
-                    <h4>Benefits of Taking Nature's yoghurt</h4>
-                    <p>Natures yoghurt is high in <b>Protein, Calcium, Vitamins</b>, and live culture, or probiotics, which
-                        can enhance
-                        the gut microbiota. These offer protection for bones and teeth and help prevent digestive problems.
-                        Sleep
-                        easy knowing we only use ethically sourced milk and minerals in all of our products.</p>
-                    {{-- <a href="#" class="btn btn-primary">Read More</a> --}}
-                </div>
-
-            </article>
-        </div>
-    </section>
 
     <section class="swiper mySwiper">
-        <h2>Customer Reviews</h2>
-        <div class="swiper-wrapper">
+       @if ($reviews)
+       <h2>Customer Reviews</h2>
+       <div class="swiper-wrapper">
 
-            @foreach ($reviews as $review)
-                <article class="swiper-slide">
-                    <div class="image">
-                        <img src="{{ asset('images') }}/{{ $review->review_image }}" alt="{{ $review->review_name }}">
-                    </div>
-                    <div class="details">
+           @forelse ($reviews as $review)
+               <article class="swiper-slide">
+                   <div class="image">
+                       <img src="{{ asset('images') }}/{{ $review->review_image }}" alt="{{ $review->review_name }}">
+                   </div>
+                   <div class="details">
 
-                        <h4>Customer Review</h4>
+                       <h4>Customer Review</h4>
 
-                        <p>{!! $review->review_description !!}</p>
-                        <h5>{{ $review->review_name }}</h5>
-                        <small>{{ $review->review_occupation }}</small>
+                       <p>{!! $review->review_description !!}</p>
+                       <h5>{{ $review->review_name }}</h5>
+                       <small>{{ $review->review_occupation }}</small>
 
-                    </div>
-                </article>
-            @endforeach
+                   </div>
+               </article>
+               @empty
+           @endforelse
 
-        </div>
-        <div class="swiper-pagination"></div>
+       </div>
+       <div class="swiper-pagination"></div>
+
+       @endif
     </section>
 
     <!--frequently ask questions-->

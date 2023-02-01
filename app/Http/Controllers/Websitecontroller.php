@@ -15,7 +15,7 @@ class Websitecontroller extends Controller
     }
 
     public function about(){
-        $staffs=Staff::where('staff_status',1)->latest()->get();
+        $staffs=Staff::where('staff_status',1)->get();
         return view('about',compact('staffs'));
     }
 

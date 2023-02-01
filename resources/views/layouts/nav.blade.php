@@ -28,7 +28,7 @@
   <nav>
     <div class="container">
       <a href="{{route('website_home')}}" class="logo">
-        <h4>NATURES</h4>
+        <h4>NATURE'S</h4>
       </a>
       <ul class="nav_menu">
         <li><a href="{{route('website_home')}}">HOME</a></li>

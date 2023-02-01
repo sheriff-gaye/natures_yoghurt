@@ -1,8 +1,8 @@
     <div class="container-fluid">
         <!-- Page Heading -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">{{ __('Administrators') }}</h1>
-            {{-- <a href="{{route('users.create')}}" class="btn btn-primary btn-sm shadow-sm">{{ __('create new')}} <i class="fa fa-plus"> </i></a> --}}
+        <div class="mb-4 d-sm-flex align-items-center justify-content-between">
+            <h1 class="mb-0 text-gray-800 h3">{{ __('Administrators') }}</h1>
+            {{-- <a href="{{route('users.create')}}" class="shadow-sm btn btn-primary btn-sm">{{ __('create new')}} <i class="fa fa-plus"> </i></a> --}}
         </div>
 
         <!-- Content Row -->
@@ -15,10 +15,7 @@
                                 <th>{{__('NO')}}</th>
                                 <th>{{ __('NAME') }}</th>
                                 <th>{{ __('EMAIL') }}</th>
-                                <th>{{ __('LAST LOGIN') }}</th>
-                                <th>{{__('LAST LOGIN IP')}}</th>
                                 <th>{{ __('CREATED AT') }}</th>
-                                <th>{{__('UPDATED AT')}}</th>
                                 <th>{{__('ACTION')}}</th>
                             </tr>
                         </thead>
@@ -28,10 +25,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->email }}</td>
-                                    <td>{{ \Carbon\Carbon::parse($user->last_login_at)->diffForHumans() }}</td>
-                                    <td>{{$user->last_login_ip}}</td>
                                     <td>{{ $user->created_at->format('Y-m-d') }}</td>
-                                    <td>{{ $user->updated_at->diffForHUmans() }}</td>
 
 
                                     <td>

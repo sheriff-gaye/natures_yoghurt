@@ -60,7 +60,7 @@ Route::get('/return',[Privacycontroller::class,'returns'])->name('returns');
 Route::resource('/cart', Cartcontroller::class);
 
 
-Auth::routes(['verify' => true]);
+Auth::routes();
 
 Route::get('/logout',[Logoutcontroller::class,'index'])->name('go_out');
 

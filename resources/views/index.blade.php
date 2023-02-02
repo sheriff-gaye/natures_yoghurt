@@ -1,6 +1,19 @@
 @extends('layouts.nav')
 
 @section('page-content')
+
+    <style>
+        .courses {
+            margin-top: 5rem;
+        }
+
+        @media screen and (max-width:1024px) {
+
+            .courses {
+                margin-top: -9rem;
+            }
+        }
+    </style>
     <header>
         <div class="container">
             <div class="info">
@@ -16,8 +29,7 @@
 
                 </p>
                 <div class="cta">
-                    <a href="{{ route('shop') }}" class="btn btn-primary">See Products <i
-                            class="uil uil-shopping-cart"></i></a>
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Add to Cart <i class="uil uil-shopping-cart"></i></a>
                 </div>
             </div>
 
@@ -28,6 +40,126 @@
     </header>
 
     <!--end of header-->
+
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h2>Yoghurt Flavours</h2>
+                <p>
+                    We make yoghurt in different flavors. Whatever flavour you want, we've got you covered. Don't be afraid
+                    to try it , our yoghurt is delicious.
+                </p>
+                <a href="#courses" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div class="categories_right">
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-shopping-basket"></i></span>
+                    <h5>Strawberry Yoghurt</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        sit.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-gift"></i></span>
+                    <h5>Vanilla Yoghurt</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        sit.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-shopping-bag"></i></span>
+                    <h5>Wheat Yoghurt</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        sit.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-megaphone"></i></span>
+                    <h5>Plain Yohurt</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        sit.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-store"></i></span>
+                    <h5>Sweeten Yoghurt</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        sit.
+                    </p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-shopping-cart-alt"></i></span>
+                    <h5>Unsweeten Yoghurt</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                        sit.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
+        <h2>Our Popular Products</h2>
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/Nature's flyer 1.png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Strawberry Yoghurt</h4>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/Nature's flyer 2.png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Vanilla Yoghurt</h4>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/Nature's flyer 3 (Copy).png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Wheat Yoghurt</h4>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/smallone.png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Plain Yoghurt</h4>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
 
     <section id="why-choose_us">
         <div class="container">
@@ -49,18 +181,18 @@
                         the gut microbiota. These offer protection for bones and teeth and help prevent digestive problems.
                         Sleep
                         easy knowing we only use ethically sourced milk and minerals in all of our products.</p>
-                    {{-- <a href="#" class="btn btn-primary">Read More</a> --}}
+                    <a href="#products" class="btn btn-primary">Read More</a>
                 </div>
 
             </article>
         </div>
     </section>
 
+    <!--why choose us starts-->
+
     <!--begining of product section-->
     <section id="products">
         <div class="container">
-            <h2>Products</h2>
-
             <article>
                 <div class="image">
                     <img src="./images/big_strawberry-min.jpg" alt="product_image1" />
@@ -96,37 +228,34 @@
 
     <!--end of product section-->
 
-    <!--why choose us starts-->
-
 
 
     <section class="swiper mySwiper">
-       @if ($reviews)
-       <h2>Customer Reviews</h2>
-       <div class="swiper-wrapper">
+        @if ($reviews)
+            <h2>Customer Reviews</h2>
+            <div class="swiper-wrapper">
 
-           @forelse ($reviews as $review)
-               <article class="swiper-slide">
-                   <div class="image">
-                       <img src="{{ asset('images') }}/{{ $review->review_image }}" alt="{{ $review->review_name }}">
-                   </div>
-                   <div class="details">
+                @forelse ($reviews as $review)
+                    <article class="swiper-slide">
+                        <div class="image">
+                            <img src="{{ asset('images') }}/{{ $review->review_image }}" alt="{{ $review->review_name }}">
+                        </div>
+                        <div class="details">
 
-                       <h4>Customer Review</h4>
+                            <h4>Customer Review</h4>
 
-                       <p>{!! $review->review_description !!}</p>
-                       <h5>{{ $review->review_name }}</h5>
-                       <small>{{ $review->review_occupation }}</small>
+                            <p>{!! $review->review_description !!}</p>
+                            <h5>{{ $review->review_name }}</h5>
+                            <small>{{ $review->review_occupation }}</small>
 
-                   </div>
-               </article>
-               @empty
-           @endforelse
+                        </div>
+                    </article>
+                @empty
+                @endforelse
 
-       </div>
-       <div class="swiper-pagination"></div>
-
-       @endif
+            </div>
+            <div class="swiper-pagination"></div>
+        @endif
     </section>
 
     <!--frequently ask questions-->
@@ -316,12 +445,12 @@
 
     <section id="trusted-clients">
         <div class="container">
-            <h2>Trusted Clients</h2>
+            <h2 style="z-index: 1">Trusted Clients</h2>
             <div class="clients">
                 <div><img src="./images/download.jpeg"></div>
                 <div><img src="./images/download (1).jpeg"></div>
-                {{-- <div><img src="./images/download (5).png"></div> --}}
                 <div><img src="./images/download.png"></div>
+                <div><img src="./images/download (1).png"></div>
 
 
 

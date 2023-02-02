@@ -108,35 +108,85 @@
 
     <!--teams strats here-->
     <section class="team">
-            <h2>Meet Our Team</h2>
-            <div class="container team_container">
-                @forelse ($staffs as $staff)
-                    <article class="team_member">
-                        <div class="team_member-image">
-                            <img src="{{ asset('images') }}/{{ $staff->staff_image }}">
-                        </div>
+        <h2>Meet Our Team</h2>
+        <div class="container team_container">
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="./images/1675178454.jpeg">
+                </div>
 
-                        <div class="team_member-info">
-                            <h4>{{ $staff->staff_name }}</h4>
-                            <p>{{ $staff->staff_occupation }}</p>
-                        </div>
+                <div class="team_member-info">
+                    <h4>John Attu</h4>
+                    <p>Manager</p>
+                </div>
 
-                        <div class="team_socials">
-                            @if ($staff->staff_instagram)
-                                <a href="{{ $staff->staff_instagram }}" target="_blank"><i class="uil uil-instagram"></i></a>
-                            @endif
-                            @if ($staff->staff_twitter)
-                                <a href="{{ $staff->staff_twitter }}" target="_blank"><i class="uil uil-twitter"></i></a>
-                            @endif
-                            @if($staff->staff_linkedin)
-                            <a href="{{ $staff->staff_linkedin }}" target="_blank"><i class="uil uil-linkedin"></i></a>
-                            @endif
+                <div class="team_socials">
+                    <a href="" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-linkedin"></i></a>
 
-                        </div>
+                </div>
 
-                    </article>
-                    @empty
-                @endforelse
+            </article>
+
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="./images/1675180442.jpeg">
+                </div>
+
+                <div class="team_member-info">
+                    <h4>Asterix Hassan</h4>
+                    <p>Consultant</p>
+                </div>
+
+                <div class="team_socials">
+                    <a href="" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-linkedin"></i></a>
+
+                </div>
+
+            </article>
+
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="./images/1675178579.jpg">
+                </div>
+
+                <div class="team_member-info">
+                    <h4>Sheriff Gaye</h4>
+                    <p>Web Developer Intern</p>
+                </div>
+
+                <div class="team_socials">
+                    <a href="" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-linkedin"></i></a>
+
+                </div>
+
+            </article>
+
+            <article class="team_member">
+                <div class="team_member-image">
+                    <img src="./images/1675194266.jpg">
+                </div>
+
+                <div class="team_member-info">
+                    <h4>Emily Otoo-Quayson</h4>
+                    <p>Digital Marketing Intern</p>
+                </div>
+
+                <div class="team_socials">
+                    <a href="" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-linkedin"></i></a>
+
+                </div>
+
+            </article>
+
+
         </div>
     </section>
 @endsection

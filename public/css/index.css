@@ -325,7 +325,7 @@ header .container .info .cta a:last-child:hover img {
 /* ==============================HEADER ENDS HERE============================================ */
 section#products .container {
     width: 65%;
-    margin-top: -10rem;
+    margin-top:-5rem;
 }
 
 section#products .container>h2, section#products .container {
@@ -452,11 +452,11 @@ section#why-choose_us .container article a:hover img {
 .swiper-slide .details h5 {
     color: var(--color-black);
     font-size: 1.3rem;
-    font-weight:500;
+    font-weight: 500;
     margin: 1.6rem 0 0.4rem;
 }
 
-.swiper-pagination-bullets{
+.swiper-pagination-bullets {
     color: var(--color-primary);
 }
 
@@ -563,7 +563,7 @@ section#trusted-clients .clients {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 section#trusted-clients h2 {
@@ -775,50 +775,108 @@ sup {
 
 }
 
+.categories {
+    background: var(--color-white);
+    height: 32rem;
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+
+.categories_left p {
+    margin: 1rem 0 3rem;
+}
+
+.categories_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+
+}
+
+.category {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.category:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.category_icon {
+    background: lightblue;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.category h5 {
+    margin: 2rem 0 1rem;
+}
+
+.category p {
+    font-size: 0.85rem;
+
+}
+.category:nth-child(2) .category_icon{
+    background: var(--color-danger);
+}
+.category:nth-child(3) .category_icon{
+    background: var(--color-warning);
+}
+.category:nth-child(4) .category_icon{
+    background: var(--color-about_success);
+
+}
+.category:nth-child(5) .category_icon{
+    background: gray;
+
+}
+.category:nth-child(6) .category_icon{
+    background:var(--color-about_primary);
+
+}
+
+
 /* ======================PRODUCT PAGES STYLES STARTS HERE================================ */
 
-.courses_container {
+
+.courses_container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4 ,1fr);
     gap: 2rem;
-    margin-top: -10rem;
+    margin-top: 2rem;
 }
-
-.course {
-    background: #DE7E5D;
+.courses h2{
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    margin-top: 3rem;
+}
+.course{
+    background:  var(--color-dark-green);
+    text-align: center;
+    border: 1px solid var(--color-dark-green);
     transition: var(--transition);
-    border: .2rem solid var(--color-primary);
-
 }
 
-.course img {
-    height: fit-content;
-    overflow: hidden;
-    margin-bottom: 1.6rem;
-    /* height: 15rem; */
+.course_info{
+    padding: .5rem;
 }
-
-.course_info {
-    padding: 0.6rem;
-
+.course_info h4{
+    color: white;
+    font-size: 1rem;
 }
-
-.course_info h3 {
-    margin-top: -0.2rem;
-    font-size: 1.5rem;
+.course_info a{
+    background: var(--color-bg1);
     color: var(--color-white);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-}
-
-.courses .course_info h4 {
-    margin-top: -0.2rem;
-    font-weight: 120;
-    color: var(--color-white);
-    font-family: 'Poppins', sans-serif;
 }
 
 .search_bar-container {
@@ -876,17 +934,6 @@ sup {
     color: var(--color-white);
 }
 
-.course_info .review {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-top: -2.7rem;
-}
-
-.course .review i {
-    font-size: 1rem;
-    color: gold;
-}
 
 /* ====================PRODUCT PAGES ENDS STYLES==================================== */
 
@@ -918,16 +965,20 @@ sup {
     transition: var(--transition);
 
 }
-.achievement_card p{
+
+.achievement_card p {
     color: var(--color-white);
 }
-.achievement_card h3{
+
+.achievement_card h3 {
     color: var(--color-white);
 }
-.achievement_card:nth-child(1){
+
+.achievement_card:nth-child(1) {
     background: var(--color-bg11);
 }
-.achievement_card:nth-child(2){
+
+.achievement_card:nth-child(2) {
     background: var(--color-dark);
 }
 
@@ -1326,7 +1377,7 @@ section#testimonials {
 
     section#products .container {
         width: var(--mobile-width);
-        margin-top: 0rem;
+        margin-top: -6rem;
     }
 
     section#products article:last-child .image {
@@ -1336,14 +1387,17 @@ section#testimonials {
     .faqs_container {
         grid-template-columns: 1fr;
 
+
     }
 
     .faqs h2 {
         margin-top: 3.5rem;
+        font-size: 2rem;
     }
 
     .faqs {
         padding: 1.5rem;
+        margin-top: 1rem;
     }
 
     .footer_container {
@@ -1392,26 +1446,30 @@ section#testimonials {
     }
 
     section#trusted-clients h2 {
-        margin-top: -9rem;
+        margin-top: -7rem;
     }
+
 
     /* =================PRODUCT TABLET MEDIA======================= */
+
+    .categories{
+        height: auto;
+    }
+    .categories_container{
+        grid-template-columns: 1fr;
+        gap:3rem ;
+    }
+    .categories_left{
+        margin-right: 0;
+    }
+
+    .courses {
+        margin-top: -10rem;
+    }
+
     .courses_container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
     }
-
-    .courses #search_msg {
-        position: absolute;
-        top: 20%;
-        left: 45%;
-        margin: 20px 0 0 -170px;
-    }
-
-    .courses #search_msg i {
-        font-size: 3rem;
-    }
-
     /* ===================PRODUCT TABLET MEDIA======================*/
     .services_container {
         grid-template-columns: 1fr;
@@ -1451,8 +1509,6 @@ section#testimonials {
 }
 
 
-/* ======================================END OF TABLET MEDIA QURIES============================================== */
-
 
 
 /* =======================================MOBILE MEDIA QURIES=========================================================== */
@@ -1482,6 +1538,7 @@ section#testimonials {
     p {
         font-size: 0.84rem;
     }
+
     .btn {
         padding: .7rem .8rem;
     }
@@ -1634,11 +1691,15 @@ section#testimonials {
 
 
     /* =========================PRODUCT  PHONE MEDIA=============================  */
+    .courses {
+        margin-top: 0;
+    }
+
     .courses_container {
         grid-template-columns: 1fr 1fr;
-        gap: .7rem;
-        margin-top: -4.4rem;
+        gap: 0.8rem;
     }
+
     .search_bar-container {
         width: 80%;
         margin-top: 1rem;
@@ -1687,4 +1748,28 @@ section#testimonials {
     .courses #search_msg i {
         font-size: 2rem;
     }
+    .categories_container{
+        margin-top: 3rem;
+    }
+
+    .categories_right{
+        grid-template-columns: 1fr 1fr;
+        gap:0.7rem;
+    }
+    .category{
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    .category_icon{
+        margin-top: 4px;
+        display: inline-block;
+    }
 }
+
+
+
+
+
+
+
+

@@ -84,18 +84,6 @@
             </li>
 
             <li class="nav-item">
-                <a  href="{{route('staff.index')}}"class="nav-link">
-                    <i class="uil uil-briefcase-alt"></i>
-                    <span>Staffs</span></a>
-            </li>
-
-            {{-- <li class="nav-item">
-                <a  href="{{route('users.index')}}"class="nav-link">
-                    <i class="uil uil-users-alt"></i>
-                    <span>Users</span></a>
-            </li> --}}
-
-            <li class="nav-item">
                 <a  href="{{route('reviews.index')}}"class="nav-link">
                     <i class="uil uil-eye"></i>
                     <span>Customer Reviews</span></a>

@@ -96,7 +96,7 @@
         <li><a href="https://www.instagram.com/accounts/login/?next=%2Fnaturesyoghurt%2F" target="_blank"><i
               class="uil uil-instagram"></i></a></li>
         <li><a href="https://twitter.com/YoghurtNature" target="_blank"><i class="uil uil-twitter"></i></a></li>
-          <!-- <li><a href="#"><i class="uil uil-linkedin"></i></a></li> -->
+        <li><a href="https://www.linkedin.com/company/nature-s-yoghurt/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
         </ul>
       </div>
 

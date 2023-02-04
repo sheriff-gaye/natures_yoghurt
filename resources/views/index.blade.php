@@ -4,7 +4,7 @@
 
     <style>
         .courses {
-            margin-top: 5rem;
+            margin-top: -10rem;
         }
 
         @media screen and (max-width:1024px) {
@@ -21,7 +21,8 @@
                     <small>yoghurt Beyond Taste</small>
                     <i class="uil uil-glass-martini"></i>
                 </div>
-                <h1>Nature's</h1>
+                {{-- it was a h1 --}}
+                <h2>Nature's Yoghurt</h2>
                 <p>
                     Nature's Yoghurt Prides itself as one of the best yoghurt producers in Ghana and our customers can
                     attest to
@@ -57,8 +58,10 @@
                     <span class="category_icon"><i class="uil uil-shopping-basket"></i></span>
                     <h5>Strawberry Yoghurt</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                        sit.
+                      <ul>
+                        <li>Sweeten Flavour</li>
+                        <li>Unsweeten Flavour</li>
+                      </ul>
                     </p>
                 </article>
 
@@ -66,8 +69,10 @@
                     <span class="category_icon"><i class="uil uil-gift"></i></span>
                     <h5>Vanilla Yoghurt</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                        sit.
+                        <ul>
+                            <li>Sweeten Flavour</li>
+                            <li>Unsweeten Flavour</li>
+                          </ul>
                     </p>
                 </article>
 
@@ -75,37 +80,13 @@
                     <span class="category_icon"><i class="uil uil-shopping-bag"></i></span>
                     <h5>Wheat Yoghurt</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                        sit.
+                        <ul>
+                            <li>Sweeten Flavour</li>
+                            <li>Unsweeten Flavour</li>
+                          </ul>
                     </p>
                 </article>
 
-                <article class="category">
-                    <span class="category_icon"><i class="uil uil-megaphone"></i></span>
-                    <h5>Plain Yohurt</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                        sit.
-                    </p>
-                </article>
-
-                <article class="category">
-                    <span class="category_icon"><i class="uil uil-store"></i></span>
-                    <h5>Sweeten Yoghurt</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                        sit.
-                    </p>
-                </article>
-
-                <article class="category">
-                    <span class="category_icon"><i class="uil uil-shopping-cart-alt"></i></span>
-                    <h5>Unsweeten Yoghurt</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-                        sit.
-                    </p>
-                </article>
             </div>
         </div>
     </section>

@@ -803,10 +803,21 @@ sup {
 }
 
 .category {
-    background: var(--color-bg2);
+    background: var(--color-bg11);
     padding: 2rem;
     border-radius: 2rem;
+    color: var(--color-white);
     transition: var(--transition);
+}
+.category:nth-child(2){
+    background: var(--color-primary);
+
+
+}
+.category:nth-child(3){
+    background: var(--color-dark-green);
+
+
 }
 
 .category:hover {
@@ -821,6 +832,7 @@ sup {
 
 .category h5 {
     margin: 2rem 0 1rem;
+    color: var(--color-white);
 }
 
 .category p {
@@ -828,7 +840,7 @@ sup {
 
 }
 .category:nth-child(2) .category_icon{
-    background: var(--color-danger);
+    background: var(--color-primary-variant);
 }
 .category:nth-child(3) .category_icon{
     background: var(--color-warning);
@@ -849,35 +861,36 @@ sup {
 
 /* ======================PRODUCT PAGES STYLES STARTS HERE================================ */
 
+.courses h2{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.course_info h4{
+    color: white;
+    font-size: 1rem;
+}
+.courses{
+    margin-top: 5rem;
+}
 
 .courses_container{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     gap: 2rem;
-    margin-top: 2rem;
-}
-.courses h2{
-    text-align: center;
-    margin-top: 3rem;
+
 }
 .course{
-    background:  var(--color-dark-green);
+    background: var(--color-green-contact);
     text-align: center;
-    border: 1px solid var(--color-dark-green);
+    border: 1px solid transparent;
     transition: var(--transition);
 }
-
 .course_info{
     padding: .5rem;
 }
-.course_info h4{
-    color: white;
-    font-size: 1rem;
-}
-.course_info a{
-    background: var(--color-bg1);
-    color: var(--color-white);
-}
+
 
 .search_bar-container {
     position: relative;
@@ -1196,7 +1209,7 @@ section#testimonials {
     border-radius: 1rem 0 0 1rem;
     background: var(--color-about_primary);
     box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
-    /* right: -100%; */
+    right: -100%;
 }
 
 .team_socials a {
@@ -1696,7 +1709,7 @@ section#testimonials {
     }
 
     .courses_container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:1fr;
         gap: 0.8rem;
     }
 

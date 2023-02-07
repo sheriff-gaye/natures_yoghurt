@@ -321,8 +321,101 @@ header .container .info .cta a:last-child:hover img {
     filter: saturate(0);
 }
 
+/* ========================================HEADER ENDS HERE==================================== */
 
-/* ==============================HEADER ENDS HERE============================================ */
+
+/* ========================================CATEGORY STARTS HERE==================================== */
+
+.categories {
+    background: var(--color-white);
+    height: 32rem;
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+}
+
+.categories_left p {
+    margin: 1rem 0 3rem;
+}
+
+.categories_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+
+}
+
+.category {
+    background: var(--color-bg11);
+    padding: 2rem;
+    border-radius: 2rem;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+.category:nth-child(2){
+    background: var(--color-primary);
+
+
+}
+.category:nth-child(3){
+    background: var(--color-dark-green);
+
+
+}
+
+.category:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.category_icon {
+    background: lightblue;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.category h5 {
+    margin: 2rem 0 1rem;
+    color: var(--color-white);
+}
+
+.category p {
+    font-size: 0.85rem;
+
+}
+.category:nth-child(2) .category_icon{
+    background: var(--color-primary-variant);
+}
+.category:nth-child(3) .category_icon{
+    background: var(--color-warning);
+}
+.category:nth-child(4) .category_icon{
+    background: var(--color-about_success);
+
+}
+.category:nth-child(5) .category_icon{
+    background: gray;
+
+}
+.category:nth-child(6) .category_icon{
+    background:var(--color-about_primary);
+
+}
+
+/* ========================================CATEGORY ENDS HERE==================================== */
+
+
+
+
+/* ========================================OUR PRODUCTS STARTS HERE==================================== */
+
 section#products .container {
     width: 65%;
     margin-top:-5rem;
@@ -396,14 +489,11 @@ section#why-choose_us .container .info {
     margin-top: 0;
 }
 
-
-section#why-choose_us .container article a:hover img {
-    filter: saturate(0);
-
-}
+/* ========================================OUR PRODUCTS ENDS HERE==================================== */
 
 
-/* ============================================swiper starts here=============================================== */
+
+/* ==========================================SWIPER STARTS HERE=============================================== */
 .swiper h2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -775,95 +865,12 @@ sup {
 
 }
 
-.categories {
-    background: var(--color-white);
-    height: 32rem;
-}
-
-.categories h1 {
-    line-height: 1;
-    margin-bottom: 3rem;
-}
-
-.categories_container {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 4rem;
-}
-
-.categories_left p {
-    margin: 1rem 0 3rem;
-}
-
-.categories_right {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
-
-}
-
-.category {
-    background: var(--color-bg11);
-    padding: 2rem;
-    border-radius: 2rem;
-    color: var(--color-white);
-    transition: var(--transition);
-}
-.category:nth-child(2){
-    background: var(--color-primary);
-
-
-}
-.category:nth-child(3){
-    background: var(--color-dark-green);
-
-
-}
-
-.category:hover {
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
-}
-
-.category_icon {
-    background: lightblue;
-    padding: 0.7rem;
-    border-radius: 0.9rem;
-}
-
-.category h5 {
-    margin: 2rem 0 1rem;
-    color: var(--color-white);
-}
-
-.category p {
-    font-size: 0.85rem;
-
-}
-.category:nth-child(2) .category_icon{
-    background: var(--color-primary-variant);
-}
-.category:nth-child(3) .category_icon{
-    background: var(--color-warning);
-}
-.category:nth-child(4) .category_icon{
-    background: var(--color-about_success);
-
-}
-.category:nth-child(5) .category_icon{
-    background: gray;
-
-}
-.category:nth-child(6) .category_icon{
-    background:var(--color-about_primary);
-
-}
-
 
 /* ======================PRODUCT PAGES STYLES STARTS HERE================================ */
 
 .courses h2{
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 
@@ -877,7 +884,7 @@ sup {
 
 .courses_container{
     display: grid;
-    grid-template-columns: repeat(4 ,1fr);
+    grid-template-columns: repeat(3 ,1fr);
     gap: 2rem;
 
 }
@@ -1481,7 +1488,7 @@ section#testimonials {
     }
 
     .courses_container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     /* ===================PRODUCT TABLET MEDIA======================*/
     .services_container {

@@ -28,6 +28,7 @@ use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Terms\Privacycontroller;
 use App\Http\Controllers\Admin\Categorycontroller;
 use App\Http\Controllers\Testingcontroller;
+use App\Http\Controllers\ThankyouController;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,4 +89,4 @@ Route::prefix('admin')->group(function () {
 
 Route::get('/checkout',[Checkoutcontroller::class,'index'])->name('checkout');
 
-// Route::get('/test',[Testingcontroller::class,'index']);
+Route::get('/thanks',[ThankyouController::class,'index'])->name('thanks');

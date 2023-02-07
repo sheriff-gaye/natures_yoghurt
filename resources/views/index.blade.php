@@ -126,17 +126,6 @@
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
                 </div>
             </article>
-
-            <article class="course">
-                <div class="course_image">
-                    <img src="./images/smallone.png" alt="" />
-                </div>
-                <div class="course_info">
-                    <h4>Plain Yoghurt</h4>
-
-                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
-                </div>
-            </article>
         </div>
     </section>
 
@@ -391,7 +380,7 @@
                 <ul class="contact_details">
                     <li>
                         <i class="uil uil-phone"></i>
-                        <h5>+233261630600 / +233246459351</h5>
+                        <h5>+233261630600 </h5>
 
                     </li>
                     <li>
@@ -412,7 +401,7 @@
                                 class="uil uil-instagram"></i></a></li>
                     <li><a href="https://twitter.com/YoghurtNature" target="_blank"><i class="uil uil-twitter"></i></a>
                     </li>
-                    <!-- <li><a href="#"><i class="uil uil-linkedin"></i></a></li> -->
+                    <li><a href="https://www.linkedin.com/company/nature-s-yoghurt/"><i class="uil uil-linkedin" target="_blank"></i></a></li>
                 </ul>
             </aside>
 
@@ -430,8 +419,13 @@
             <div class="clients">
                 <div><img src="./images/download.jpeg"></div>
                 <div><img src="./images/download (1).jpeg"></div>
+                {{-- <div><img src="./images/sdf PM.jpg" height="300px" width="300px"></div> --}}
                 <div><img src="./images/download.png"></div>
                 <div><img src="./images/download (1).png"></div>
+                <div><img src="./images/logo1.png" ></div>
+
+
+
 
 
 
@@ -439,3 +433,6 @@
         </div>
     </section>
 @endsection
+
+
+generate a laravel crud ?

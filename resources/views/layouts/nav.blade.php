@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+  <meta name="google-site-verification" content="xG7EZhZSqR-ZkvIFWQ1imdmw9N8RMoYZLx-iW73FidY" />
   <link
     href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:wght@200;300;400;500;600&display=swap"
     rel="stylesheet" />

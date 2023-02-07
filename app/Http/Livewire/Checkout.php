@@ -80,7 +80,7 @@ class Checkout extends Component
 
         Cart::destroy();
         $this->emit('cart_updated');
-        return redirect()->route('shop');
+        return redirect()->route('thanks');
 
 
 

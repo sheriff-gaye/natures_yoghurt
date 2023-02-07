@@ -103,17 +103,17 @@ a:hover {
 /*--- Common Classes---------------------*/
 ::-moz-selection {
   background: #c50c3
-  /* WebKit/Blink Browsers */
+  /* WebKit/Blink Brows;ers */
   color: #fff;
 }
 ::selection {
-  background: #c50c3
+  background: #c50c3;
   /* WebKit/Blink Browsers */
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #c50c3
+  background: #c50c3;
   /* Gecko Browsers */
   color: #fff;
 }

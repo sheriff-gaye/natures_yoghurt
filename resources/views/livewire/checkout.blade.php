@@ -143,6 +143,7 @@
                                 <a class="btn btn-fill-out btn-block mt-30" style="background:#c50c37;border:none"
                                     wire:click='order'>Place
                                     Order</a>
+                                    <a class="btn btn-fill-out btn-block mt-30" style="background:#c50c37;border:none" href="{{ route('shop') }}">Shopping Cart</a>
                             </div>
                         </div>
                     </div>

@@ -54,7 +54,7 @@
 
 .nav_menu li a {
     color: var(--color-black);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -62,7 +62,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--color-dark);
     background: var(--color-white);
     font-weight: 300;
@@ -87,13 +87,13 @@ img {
 a {
     color: var(--color-black);
     transition: all 300ms ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     color: var(--color-black);
     font-family: 'Abhaya Libre', serif;
-    font-weight: 800;
+    font-weight: 700;
 
 }
 
@@ -104,17 +104,17 @@ h1 {
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: -0.2rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h4, h5 {
     font-size: 1.4rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: var(--color-dark);
 
@@ -126,7 +126,7 @@ h5 {
 
 p {
     line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--color-dark);
 }
 
@@ -176,7 +176,7 @@ nav {
     background: white;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     color: var(--color-black);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 
@@ -198,7 +198,7 @@ nav .container ul {
 
 nav .container ul a {
     padding: 0 0 0.3rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav .container ul a.active {
@@ -216,7 +216,7 @@ nav .icons {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .window-scroll {
@@ -272,6 +272,30 @@ header .container {
     margin-top: -4rem;
 }
 
+@keyframes yoghurt {
+    0% {
+        transform: rotate(-60deg) scale(.5);
+    }
+}
+
+header .container .header-image img {
+    width: 100%;
+    transform: rotate(0deg);
+    animation: yoghurt .5s linear;
+}
+
+@keyframes slideContent{
+    0%{
+      opacity:0;
+      transform: translateX(-10rem);
+    }
+  }
+header .container .info {
+    animation: slideContent .5s linear 1s backwards;
+
+}
+
+
 header .container .info .delivery {
     background: var(--color-primary-variant);
     width: max-content;
@@ -294,7 +318,7 @@ header .container .info h1 {
 header .container .info p {
     font-size: 1.2rem;
     margin: 1rem 0 2rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header .container .info .cta {
@@ -354,18 +378,20 @@ header .container .info .cta a:last-child:hover img {
 }
 
 .category {
-    background: var(--color-bg11);
+    background: rgb(73, 140, 73);
     padding: 2rem;
     border-radius: 2rem;
     color: var(--color-white);
     transition: var(--transition);
 }
-.category:nth-child(2){
-    background: var(--color-primary);
+
+.category:nth-child(2) {
+    background: rgb(13, 89, 165);
 
 
 }
-.category:nth-child(3){
+
+.category:nth-child(3) {
     background: var(--color-dark-green);
 
 
@@ -390,22 +416,27 @@ header .container .info .cta a:last-child:hover img {
     font-size: 0.85rem;
 
 }
-.category:nth-child(2) .category_icon{
-    background: var(--color-primary-variant);
+
+.category:nth-child(2) .category_icon {
+    background: var(--color-bg1);
 }
-.category:nth-child(3) .category_icon{
-    background: var(--color-warning);
+
+.category:nth-child(3) .category_icon {
+    background: var(--color-danger);
 }
-.category:nth-child(4) .category_icon{
+
+.category:nth-child(4) .category_icon {
     background: var(--color-about_success);
 
 }
-.category:nth-child(5) .category_icon{
+
+.category:nth-child(5) .category_icon {
     background: gray;
 
 }
-.category:nth-child(6) .category_icon{
-    background:var(--color-about_primary);
+
+.category:nth-child(6) .category_icon {
+    background: var(--color-about_primary);
 
 }
 
@@ -418,7 +449,7 @@ header .container .info .cta a:last-child:hover img {
 
 section#products .container {
     width: 65%;
-    margin-top:-5rem;
+    margin-top: -5rem;
 }
 
 section#products .container>h2, section#products .container {
@@ -551,7 +582,7 @@ section#why-choose_us .container .info {
 }
 
 .swiper-slide small {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* ======================================swiper ends here=================================================== */
@@ -588,7 +619,7 @@ section#why-choose_us .container .info {
     font-size: 1rem;
     line-height: 2.2;
     color: var(--color-white);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .faq_icon {
@@ -601,7 +632,7 @@ section#why-choose_us .container .info {
     margin-top: 0.8rem;
     display: none;
     color: var(--color-white);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .faq.open p {
@@ -632,7 +663,7 @@ section#cta .container .info h3 {
 
 section#cta .container .info p {
     color: var(--color-light);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -653,7 +684,7 @@ section#trusted-clients .clients {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2.5rem;
+    margin-top: 2.7rem;
 }
 
 section#trusted-clients h2 {
@@ -675,7 +706,7 @@ section#trusted-clients {
     height: 30rem;
     margin: 7rem auto;
     border-radius: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: -0.4rem;
 }
 
@@ -707,7 +738,7 @@ section#trusted-clients {
     font-size: 0.9rem;
     margin-bottom: 2rem;
     color: var(--color-white);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -781,7 +812,7 @@ footer {
     padding-top: 5rem;
     margin-top: 5rem;
     color: var(--color-white);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer_container {
@@ -802,7 +833,7 @@ footer {
 .footer_1 p {
     margin: 0 0 2rem;
     color: var(--color-white);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     opacity: 0.7;
 }
 
@@ -868,33 +899,36 @@ sup {
 
 /* ======================PRODUCT PAGES STYLES STARTS HERE================================ */
 
-.courses h2{
+.courses h2 {
     text-align: center;
     margin-top: 2rem;
 }
 
 
-.course_info h4{
+.course_info h4 {
     color: white;
     font-size: 1rem;
 }
-.courses{
+
+.courses {
     margin-top: 5rem;
 }
 
-.courses_container{
+.courses_container {
     display: grid;
-    grid-template-columns: repeat(3 ,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
 }
-.course{
+
+.course {
     background: var(--color-green-contact);
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
 }
-.course_info{
+
+.course_info {
     padding: .5rem;
 }
 
@@ -963,7 +997,7 @@ sup {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: -2rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -1144,7 +1178,7 @@ section#testimonials {
 }
 
 .testimonial p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -1234,6 +1268,8 @@ section#testimonials {
 .end_footer-container h2 {
     margin-top: -2rem;
 }
+
+
 
 /* ==========================ABOUT PAGE ENDS HERE=================================== */
 
@@ -1443,7 +1479,7 @@ section#testimonials {
     }
 
     .search_bar-container {
-        width: 50%;
+        width: 35%;
     }
 
     .contact_container {
@@ -1472,14 +1508,16 @@ section#testimonials {
 
     /* =================PRODUCT TABLET MEDIA======================= */
 
-    .categories{
+    .categories {
         height: auto;
     }
-    .categories_container{
+
+    .categories_container {
         grid-template-columns: 1fr;
-        gap:3rem ;
+        gap: 3rem;
     }
-    .categories_left{
+
+    .categories_left {
         margin-right: 0;
     }
 
@@ -1490,6 +1528,7 @@ section#testimonials {
     .courses_container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     /* ===================PRODUCT TABLET MEDIA======================*/
     .services_container {
         grid-template-columns: 1fr;
@@ -1524,6 +1563,7 @@ section#testimonials {
     .team_member {
         padding: 1rem;
     }
+
 
     /* ============================END OF ABOUT TABET============================= */
 }
@@ -1716,12 +1756,12 @@ section#testimonials {
     }
 
     .courses_container {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         gap: 0.8rem;
     }
 
     .search_bar-container {
-        width: 80%;
+        width: 50%;
         margin-top: 1rem;
 
     }
@@ -1768,28 +1808,23 @@ section#testimonials {
     .courses #search_msg i {
         font-size: 2rem;
     }
-    .categories_container{
+
+    .categories_container {
         margin-top: 3rem;
     }
 
-    .categories_right{
+    .categories_right {
         grid-template-columns: 1fr 1fr;
-        gap:0.7rem;
+        gap: 0.7rem;
     }
-    .category{
+
+    .category {
         padding: 1rem;
         border-radius: 1rem;
     }
-    .category_icon{
+
+    .category_icon {
         margin-top: 4px;
         display: inline-block;
     }
 }
-
-
-
-
-
-
-
-

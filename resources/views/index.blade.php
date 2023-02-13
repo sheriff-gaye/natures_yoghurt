@@ -22,6 +22,7 @@
                     <i class="uil uil-glass-martini"></i>
                 </div>
                 {{-- it was a h1 --}}
+
                 <h2>Nature's Yoghurt</h2>
                 <p>
                     Nature's Yoghurt Prides itself as one of the best yoghurt producers in Ghana and our customers can
@@ -35,10 +36,12 @@
             </div>
 
             <div class="header-image">
-                <img src="./images/Yoghurt.jpg" alt="header_image" />
+                <img src="./images/new_top.jpg" alt="header_image"
+                    style=" border:none;box-shadow:0 0 -2rem 0 rgba(226, 222, 222, 0.3)" />
             </div>
         </div>
     </header>
+
 
     <!--end of header-->
 
@@ -53,15 +56,15 @@
                 <a href="#courses" class="btn btn-primary">Learn More</a>
             </div>
 
-            <div class="categories_right">
+            <div class="categories_right" style="font-family:monoline">
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-shopping-basket"></i></span>
                     <h5>Strawberry Yoghurt</h5>
                     <p>
-                      <ul>
+                    <ul >
                         <li>Sweeten Flavour</li>
                         <li>Unsweeten Flavour</li>
-                      </ul>
+                    </ul>
                     </p>
                 </article>
 
@@ -69,10 +72,10 @@
                     <span class="category_icon"><i class="uil uil-gift"></i></span>
                     <h5>Vanilla Yoghurt</h5>
                     <p>
-                        <ul>
-                            <li>Sweeten Flavour</li>
-                            <li>Unsweeten Flavour</li>
-                          </ul>
+                    <ul>
+                        <li>Sweeten Flavour</li>
+                        <li>Unsweeten Flavour</li>
+                    </ul>
                     </p>
                 </article>
 
@@ -80,10 +83,10 @@
                     <span class="category_icon"><i class="uil uil-shopping-bag"></i></span>
                     <h5>Wheat Yoghurt</h5>
                     <p>
-                        <ul>
-                            <li>Sweeten Flavour</li>
-                            <li>Unsweeten Flavour</li>
-                          </ul>
+                    <ul style="font-family:monoline">
+                        <li>Sweeten Flavour</li>
+                        <li>Unsweeten Flavour</li>
+                    </ul>
                     </p>
                 </article>
 
@@ -231,7 +234,7 @@
     <!--frequently ask questions-->
 
     <section class="faqs" id="faqs">
-        <h2>Frequently Ask Question</h2>
+        <h2>Frequently Ask Questions</h2>
 
         <div class="container faqs_container">
             <article class="faq">
@@ -292,7 +295,7 @@
             <article class="faq">
                 <div class="faq_icon"><i class="uil uil-plus"></i></div>
                 <div class="question_answer">
-                    <h4>Can I travel with Nature's Yoghurt without refrigeration ?</h4>
+                    <h4>Nature's Yoghurt without refrigeration ?</h4>
                     <p>
                         Yes, a day's travel under cool conditions will not cause spoilage of the product. Best to travel
                         with the
@@ -359,7 +362,7 @@
             <div class="image">
                 <img src="./images/p1.png" alt="">
             </div>
-            <a href="#contact" class="btn">Let's Talk</a>
+            <a href="#contact" class="btn" style="background:#008080 ">Let's Talk</a>
         </div>
     </section>
     <!--cta ends here-->
@@ -372,10 +375,8 @@
                     <img src="./images/contact.svg">
                 </div>
                 <h2>Contact Us</h2>
-                <p>Do not hesitate to reach out to us in case of any questions, clarifications and orders.
-                    <br><br>
-                    You are also much welcomed to share your feedback, opinions, and suggestions on our products through our
-                    webform, phone, email or socials
+                You are also much welcomed to share your feedback, opinions, and suggestions on our products through our
+                webform, phone, email or socials .
                 </p>
                 <ul class="contact_details">
                     <li>
@@ -401,7 +402,8 @@
                                 class="uil uil-instagram"></i></a></li>
                     <li><a href="https://twitter.com/YoghurtNature" target="_blank"><i class="uil uil-twitter"></i></a>
                     </li>
-                    <li><a href="https://www.linkedin.com/company/nature-s-yoghurt/"><i class="uil uil-linkedin" target="_blank"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/nature-s-yoghurt/"><i class="uil uil-linkedin"
+                                target="_blank"></i></a></li>
                 </ul>
             </aside>
 
@@ -412,27 +414,18 @@
 
     <!--contact ends here-->
 
-
     <section id="trusted-clients">
         <div class="container">
             <h2 style="z-index: 1">Trusted Clients</h2>
             <div class="clients">
                 <div><img src="./images/download.jpeg"></div>
-                <div><img src="./images/download (1).jpeg"></div>
-                {{-- <div><img src="./images/sdf PM.jpg" height="300px" width="300px"></div> --}}
+                <div><img src="./images/chaca.jpg"></div>
                 <div><img src="./images/download.png"></div>
+                <div><img src="./images/new_oys.jpg" alt=""></div>
                 <div><img src="./images/download (1).png"></div>
-                <div><img src="./images/logo1.png" ></div>
-
-
-
-
-
+                <div><img src="./images/logo1.png"></div>
 
             </div>
         </div>
     </section>
 @endsection
-
-
-generate a laravel crud ?

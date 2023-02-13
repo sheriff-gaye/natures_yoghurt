@@ -17,3 +17,5 @@
         </div>
     </section>
 @endsection
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eius quidem mollitia accusantium iusto vitae quis totam ex iure eaque!

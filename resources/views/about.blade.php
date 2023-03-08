@@ -131,6 +131,25 @@
 
             <article class="team_member">
                 <div class="team_member-image">
+                    <img src="./images/gifty.jpeg">
+                </div>
+
+                <div class="team_member-info">
+                    <h4>Dr. Gifty Anane-Taabeah Attu</h4>
+                    <p>Co-Founder</p>
+                </div>
+
+                <div class="team_socials">
+                    <a href="" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-twitter"></i></a>
+                    <a href="" target="_blank"><i class="uil uil-linkedin"></i></a>
+
+                </div>
+
+            </article>
+
+            <article class="team_member">
+                <div class="team_member-image">
                     <img src="./images/1675180442.jpeg">
                 </div>
 

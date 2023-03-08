@@ -31,12 +31,12 @@
 
                 </p>
                 <div class="cta">
-                    <a href="{{ route('shop') }}" class="btn btn-primary">Add to Cart <i class="uil uil-shopping-cart"></i></a>
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop Now <i class="uil uil-shopping-cart"></i></a>
                 </div>
             </div>
 
             <div class="header-image">
-                <img src="./images/new_top.jpg" alt="header_image"
+                <img src="./images/new_top.png" alt="header_image"
                     style=" border:none;box-shadow:0 0 -2rem 0 rgba(226, 222, 222, 0.3)" />
             </div>
         </div>
@@ -56,7 +56,7 @@
                 <a href="#courses" class="btn btn-primary">Learn More</a>
             </div>
 
-            <div class="categories_right" style="font-family:monoline">
+            <div class="categories_right">
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-shopping-basket"></i></span>
                     <h5>Strawberry Yoghurt</h5>
@@ -83,7 +83,7 @@
                     <span class="category_icon"><i class="uil uil-shopping-bag"></i></span>
                     <h5>Wheat Yoghurt</h5>
                     <p>
-                    <ul style="font-family:monoline">
+                    <ul>
                         <li>Sweeten Flavour</li>
                         <li>Unsweeten Flavour</li>
                     </ul>
@@ -99,10 +99,10 @@
         <div class="container courses_container">
             <article class="course">
                 <div class="course_image">
-                    <img src="./images/Nature's flyer 1.png" alt="" />
+                    <img src="./images/large.png" alt="" />
                 </div>
                 <div class="course_info">
-                    <h4>Strawberry Yoghurt</h4>
+                    {{-- <h4>Strawberry Yoghurt</h4> --}}
 
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
                 </div>
@@ -110,22 +110,19 @@
 
             <article class="course">
                 <div class="course_image">
-                    <img src="./images/Nature's flyer 2.png" alt="" />
+                    <img src="./images/medium.png" alt="" />
                 </div>
                 <div class="course_info">
-                    <h4>Vanilla Yoghurt</h4>
+
 
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
                 </div>
             </article>
-
             <article class="course">
                 <div class="course_image">
-                    <img src="./images/Nature's flyer 3 (Copy).png" alt="" />
+                    <img src="./images/small.png" alt="" />
                 </div>
                 <div class="course_info">
-                    <h4>Wheat Yoghurt</h4>
-
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
                 </div>
             </article>
@@ -139,13 +136,12 @@
             <div class="head">
 
                 <div class="left">
-                    <!-- <h4>Why Choose Us</h4> -->
-                    <h2>Learn More Details</h2>
+                    <h2>More Details</h2>
                 </div>
             </div>
             <article>
                 <div class="image">
-                    <img src="./images/124.jpg" alt="why-choose_us_image">
+                    <img src="./images/124.png" alt="why-choose_us_image">
                 </div>
                 <div class="info">
                     <h4>Benefits of Taking Nature's yoghurt</h4>
@@ -168,7 +164,7 @@
         <div class="container">
             <article>
                 <div class="image">
-                    <img src="./images/big_strawberry-min.jpg" alt="product_image1" />
+                    <img src="./images/big_strawberry-min.png" alt="product_image1" />
                 </div>
                 <div class="info">
                     <h2>Strawberry</h2>
@@ -418,12 +414,11 @@
         <div class="container">
             <h2 style="z-index: 1">Trusted Clients</h2>
             <div class="clients">
-                <div><img src="./images/download.jpeg"></div>
-                <div><img src="./images/chaca.jpg"></div>
-                <div><img src="./images/download.png"></div>
-                <div><img src="./images/new_oys.jpg" alt=""></div>
-                <div><img src="./images/download (1).png"></div>
-                <div><img src="./images/logo1.png"></div>
+                <div><img src="./images/prime.png"></div>
+                <div><img src="./images/care.png"></div>
+                <div><img src="./images/oys.png" alt=""></div>
+                <div><img src="./images/mcf.png"></div>
+                <div><img src="./images/new_logo.png"></div>
 
             </div>
         </div>

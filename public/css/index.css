@@ -64,7 +64,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-dark);
-    background: var(--color-white);
+    background: radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%);
     font-weight: 300;
 
 
@@ -261,15 +261,17 @@ header {
     place-items: center;
 
 
+
 }
 
 header .container {
     display: grid;
-    grid-template-columns: 47% 53%;
+    grid-template-columns: 45% 55%;
     gap: 3rem;
     align-items: center;
     max-height: 100%;
     margin-top: -4rem;
+
 }
 
 @keyframes yoghurt {
@@ -280,7 +282,7 @@ header .container {
 
 header .container .header-image img {
     width: 100%;
-    transform: rotate(0deg);
+    transform: rotate(-3deg);
     animation: yoghurt .5s linear;
 }
 
@@ -351,7 +353,6 @@ header .container .info .cta a:last-child:hover img {
 /* ========================================CATEGORY STARTS HERE==================================== */
 
 .categories {
-    background: var(--color-white);
     height: 32rem;
 }
 
@@ -360,9 +361,10 @@ header .container .info .cta a:last-child:hover img {
     margin-bottom: 3rem;
 }
 
+
 .categories_container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
     gap: 4rem;
 }
 
@@ -449,7 +451,7 @@ header .container .info .cta a:last-child:hover img {
 
 section#products .container {
     width: 65%;
-    margin-top: -5rem;
+    margin-top: -9rem;
 }
 
 section#products .container>h2, section#products .container {
@@ -481,7 +483,7 @@ section#products article:last-child .image {
 section#why-choose_us .container .head {
     display: flex;
     justify-content: center;
-    margin-top: -7rem;
+    margin-top: -5rem;
 
 }
 
@@ -924,12 +926,12 @@ sup {
 .course {
     background: var(--color-green-contact);
     text-align: center;
-    border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .course_info {
     padding: .5rem;
+    border:1px solid var(--color-green-contact);
 }
 
 
@@ -1170,7 +1172,7 @@ section#testimonials {
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
-    background: #ece2e2;
+    background: #db7553;
     padding: 2rem;
     font-size: 0.88rem;
     border: 1px solid transparent;
@@ -1179,6 +1181,8 @@ section#testimonials {
 
 .testimonial p {
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-white);
+
 }
 
 
@@ -1734,7 +1738,7 @@ section#testimonials {
         flex-direction: column;
     }
 
-    .form_name input[type="text"] {
+    .form_name input[type="email"] {
         width: 100%;
     }
 

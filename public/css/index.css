@@ -130,7 +130,7 @@ p {
 }
 
 .btn {
-    padding: .9rem 1.8rem;
+    padding: .5rem 1rem;
     font-weight: 300;
     width: fit-content;
     background: var(--color-primary);
@@ -1475,6 +1475,10 @@ section#testimonials {
 
 
     }
+    .swiper-slide img {
+        height: 12rem;
+        width: 12rem;
+    }
 
     .faqs h2 {
         margin-top: 3.5rem;
@@ -1552,12 +1556,13 @@ section#testimonials {
         margin-right: 0;
     }
 
-    .courses {
-        margin-top: -10rem;
+    .courses h2{
+        margin-top: 13rem;
     }
 
     .courses_container {
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 3rem;
     }
 
     /* ===================PRODUCT TABLET MEDIA======================*/
@@ -1792,12 +1797,12 @@ section#testimonials {
 
     .courses h2 {
         font-size: 2rem;
-        margin-top: 12rem;
+        margin-top: 16rem;
 
     }
 
     .courses_container {
-        margin-top: 10rem;
+        margin-top: 2rem;
         grid-template-columns: 1fr 1fr;
         gap: 0.8rem;
     }

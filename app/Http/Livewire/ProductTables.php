@@ -18,7 +18,7 @@ class ProductTables extends Component
     {
         $cart= Cart::content();
         sleep(.5);
-        $this->products=Products::where('product_name','like',"%{$this->search}%")->where('product_status',1)->get();
+        $this->products=Products::where('product_name','like',"%{$this->search}%")->where('product_status',1)->orderBy('category_id', 'asc')->get();
         return view('livewire.product-tables',compact('cart'),[
             'products'=>$this->products
         ]);

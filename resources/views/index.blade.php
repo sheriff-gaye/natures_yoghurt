@@ -36,8 +36,7 @@
             </div>
 
             <div class="header-image">
-                <img src="./images/new_top.png" alt="header_image"
-                    style=" border:none;box-shadow:0 0 -2rem 0 rgba(226, 222, 222, 0.3)" />
+                <img src="./images/new_top.png" alt="header_image"/>
             </div>
         </div>
     </header>
@@ -103,7 +102,7 @@
     <section class="categories">
         <div class="container categories_container">
             <div class="categories_left">
-                <h2>Yoghurt Flavours</h2>
+                <h2>Why Nature's Yoghurt</h2>
                 <p>
                     We make yoghurt in different flavors. Whatever flavour you want, we've got you covered. Don't be afraid
                     to try it , our yoghurt is delicious.
@@ -114,34 +113,30 @@
             <div class="categories_right">
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-shopping-basket"></i></span>
-                    <h5>Strawberry Yoghurt</h5>
+
+                    <br><br><br>
+
                     <p>
-                    <ul>
-                        <li>Sweeten Flavour</li>
-                        <li>Unsweeten Flavour</li>
-                    </ul>
+                        Our milk used in production is fresh and sourced from cow milk from the farm.
                     </p>
                 </article>
 
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-gift"></i></span>
-                    <h5>Vanilla Yoghurt</h5>
+                    <br><br><br>
+
                     <p>
-                    <ul>
-                        <li>Sweeten Flavour</li>
-                        <li>Unsweeten Flavour</li>
-                    </ul>
+                        Nature's Yoghurt has no preservatives, no color and no artificial thickeners.
                     </p>
                 </article>
 
                 <article class="category">
                     <span class="category_icon"><i class="uil uil-shopping-bag"></i></span>
-                    <h5>Wheat Yoghurt</h5>
+                    <br><br><br>
+
+
                     <p>
-                    <ul>
-                        <li>Sweeten Flavour</li>
-                        <li>Unsweeten Flavour</li>
-                    </ul>
+                        Instead its nutritiously dense with proteins, vitamins, minerals and probiotics
                     </p>
                 </article>
 

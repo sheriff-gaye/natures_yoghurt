@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +13,8 @@
     --color-bg: #1f2641;
     --color-bg1: #2e3267;
     --color-bg2: #424890;
+    --color-primary-contact: #b3aeaf;
+
 
     --container-width-lg: 90%;
     --container-width-md: 90%;
@@ -56,44 +57,49 @@ img {
 
 .btn {
     display: inline-block;
-    padding: .8rem .9rem;
+    padding: .7rem .8rem;
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
 }
-.add{
+
+.add {
     background: var(--color-bg1);
     color: var(--color-white);
 }
 
 
 .btn-primary {
-    background: var(--color-about_primary);
+    background:  #008080;
     color: var(--color-white);
     border-radius: 10px;
 }
-.products{
+
+.products {
     margin-top: -9rem;
 }
 
 
 
-.products_container{
+.products_container {
     display: grid;
-    grid-template-columns: repeat(4 ,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
-.product{
-    background:#db7553;
+
+.product {
     text-align: center;
-    border: 1px solid var(--color-about_primary);
+    border: 1px solid gray;
     transition: var(--transition);
 }
-.product_info{
-    padding: 1rem;
+
+.product_info {
+    padding: .5rem;
+    background: #eee;
 }
-.product_info h4{
-    color: white;
+
+.product_info h4 {
+    color: black;
     font-weight: 300;
 }
 
@@ -110,7 +116,7 @@ img {
     padding: 0.6rem 1rem;
     border-radius: var(--card-border-radius-2);
     color: black;
-    margin-top:3rem;
+    margin-top: 3rem;
 }
 
 .search_bar-container>div {
@@ -135,26 +141,31 @@ img {
 
 /* =================================TABE MEDIA QURIES============================ */
 @media screen and (max-width:1024px) {
-    .container{
+    .container {
         width: var(--container-width-md);
     }
-    h1{
+
+    h1 {
         font-size: 2.2rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.7rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.4rem;
     }
-    h4{
+
+    h4 {
         font-size: 1.2rem;
     }
 
-    .products{
+    .products {
         margin-top: -5rem;
     }
-    .products_container{
+
+    .products_container {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -167,21 +178,22 @@ img {
     h4 {
         font-size: 0.96rem;
     }
+
     .btn {
 
         padding: .5rem .5rem;
 
     }
 
-    .container{
+    .container {
         width: 93%;
     }
 
-    .products{
+    .products {
         margin-top: -7rem;
     }
 
-    .products_container{
+    .products_container {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }

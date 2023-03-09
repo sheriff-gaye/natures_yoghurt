@@ -81,30 +81,9 @@
         </div>
     </section>
 
-    <section id="testimonials">
-        <h2>Why Nature's Yoghurt</h2>
-
-        <div class="container testimonial_container">
-            <article class="testimonial">
-                <p>Our milk used in production is fresh and sourced from cow milk from the farm.</p>
-            </article>
-
-            <article class="testimonial">
-                <p>Nature's Yoghurt has no preservatives, no color and no artificial thickeners.</p>
-            </article>
-
-            <article class="testimonial">
-                <p>Instead its nutritiously dense with proteins, vitamins, minerals and probiotics </p>
-            </article>
-
-            <article class="testimonial">
-                <p>The addition of fresh fruits and in some cases wheat boots the vitamins, minerals, carbohydrates and
-                    fiber in
-                    the product.</p>
-            </article>
-
-        </div>
-    </section>
+    {{-- The addition of fresh fruits and in some cases wheat boots the vitamins, minerals, carbohydrates and
+    fiber in
+    the product. --}}
 
     <!--teams strats here-->
     <section class="team">
@@ -112,7 +91,7 @@
         <div class="container team_container">
             <article class="team_member">
                 <div class="team_member-image">
-                    <img src="./images/1675178454.jpeg">
+                    <img src="./images/team/john.png">
                 </div>
 
                 <div class="team_member-info">
@@ -131,7 +110,7 @@
 
             <article class="team_member">
                 <div class="team_member-image">
-                    <img src="./images/gifty.jpeg">
+                    <img src="./images/team/gifty.png">
                 </div>
 
                 <div class="team_member-info">
@@ -150,7 +129,7 @@
 
             <article class="team_member">
                 <div class="team_member-image">
-                    <img src="./images/1675180442.jpeg">
+                    <img src="./images/team/hassan.png">
                 </div>
 
                 <div class="team_member-info">
@@ -169,7 +148,7 @@
 
             <article class="team_member">
                 <div class="team_member-image">
-                    <img src="./images/1675178579.jpg">
+                    <img src="./images/team/sheriff.png">
                 </div>
 
                 <div class="team_member-info">
@@ -188,7 +167,7 @@
 
             <article class="team_member">
                 <div class="team_member-image">
-                    <img src="./images/1675194266.jpg">
+                    <img src="./images/team/1675194266.jpg">
                 </div>
 
                 <div class="team_member-info">

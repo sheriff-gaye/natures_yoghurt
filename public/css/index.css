@@ -258,7 +258,7 @@ header {
     top: 4rem;
     display: grid;
     place-items: center;
-    background: var(--color-white);
+    background: radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%);
     /* radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%) */
 
 
@@ -358,7 +358,7 @@ header .container .info .cta a:last-child:hover img {
     height: 32rem;
 }
 
-.categories h1 {
+.categories h2 {
     line-height: 1;
     margin-bottom: 3rem;
 }
@@ -372,6 +372,7 @@ header .container .info .cta a:last-child:hover img {
 
 .categories_left p {
     margin: 1rem 0 3rem;
+
 }
 
 .categories_right {
@@ -380,9 +381,12 @@ header .container .info .cta a:last-child:hover img {
     gap: 1.2rem;
 
 }
+.category p{
+    color: white;
+}
 
 .category {
-    background: rgb(73, 140, 73);
+    background: rgb(35, 67, 74);
     padding: 2rem;
     border-radius: 2rem;
     color: var(--color-white);
@@ -390,13 +394,13 @@ header .container .info .cta a:last-child:hover img {
 }
 
 .category:nth-child(2) {
-    background: rgb(13, 89, 165);
+    background: rgb(119, 137, 154);
 
 
 }
 
 .category:nth-child(3) {
-    background: var(--color-dark-green);
+    background: rgb(110, 85, 140);
 
 
 }
@@ -423,7 +427,7 @@ header .container .info .cta a:last-child:hover img {
 }
 
 .category:nth-child(2) .category_icon {
-    background: var(--color-bg1);
+    background: goldenrod;
 }
 
 .category:nth-child(3) .category_icon {
@@ -1172,55 +1176,6 @@ sup {
     margin-left: 1rem;
 }
 
-section#testimonials {
-    margin-top: -2rem;
-}
-
-
-#testimonials h2 {
-    text-align: center;
-    margin-top: -2rem;
-
-}
-
-.testimonial_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    background: #db7553;
-    padding: 2rem;
-    font-size: 0.88rem;
-    border: 1px solid transparent;
-    transition: all 400ms ease;
-}
-
-.testimonial p {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--color-white);
-
-}
-
-
-.testimonial:hover {
-    background: transparent;
-    border-color: var(--color-primary);
-    color: var(--color-primary);
-    box-shadow: 0 3rem 2rem var(--color-primary-variant);
-    z-index: 1;
-}
-
-.testimonial:hover p {
-    color: var(--color-primary);
-}
-
-
 
 .team_container {
     display: grid;
@@ -1574,10 +1529,7 @@ section#testimonials {
         gap: 1rem;
     }
 
-    .testimonial_container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+
 
 
     /* =============================================ABOUT TABLET MEDIA================================= */

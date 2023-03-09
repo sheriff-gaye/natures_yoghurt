@@ -45,6 +45,61 @@
 
     <!--end of header-->
 
+    <section class="courses" id="courses">
+        <h2>Our Popular Products</h2>
+        <div class="container courses_container">
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/large.png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Strawberry Yoghurt</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/medium.png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Vanilla Yoghurt</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/Nature's flyer 3 (Copy).png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Wheat Yoghurt</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+
+            </article>
+            <article class="course">
+                <div class="course_image">
+                    <img src="./images/Nature's flyer 2.png" alt="" />
+                </div>
+                <div class="course_info">
+                    <h4>Strawberry Yoghurt</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
     <section class="categories">
         <div class="container categories_container">
             <div class="categories_left">
@@ -61,7 +116,7 @@
                     <span class="category_icon"><i class="uil uil-shopping-basket"></i></span>
                     <h5>Strawberry Yoghurt</h5>
                     <p>
-                    <ul >
+                    <ul>
                         <li>Sweeten Flavour</li>
                         <li>Unsweeten Flavour</li>
                     </ul>
@@ -91,41 +146,6 @@
                 </article>
 
             </div>
-        </div>
-    </section>
-
-    <section class="courses" id="courses">
-        <h2>Our Popular Products</h2>
-        <div class="container courses_container">
-            <article class="course">
-                <div class="course_image">
-                    <img src="./images/large.png" alt="" />
-                </div>
-                <div class="course_info">
-                    {{-- <h4>Strawberry Yoghurt</h4> --}}
-
-                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
-                </div>
-            </article>
-
-            <article class="course">
-                <div class="course_image">
-                    <img src="./images/medium.png" alt="" />
-                </div>
-                <div class="course_info">
-
-
-                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
-                </div>
-            </article>
-            <article class="course">
-                <div class="course_image">
-                    <img src="./images/small.png" alt="" />
-                </div>
-                <div class="course_info">
-                    <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
-                </div>
-            </article>
         </div>
     </section>
 
@@ -213,7 +233,7 @@
 
                             <h4>Customer Review</h4>
 
-                            <p>{!! $review->review_description !!}</p>
+                            <p><b>"</b>{!! $review->review_description !!}<b>"</b></p>
                             <h5>{{ $review->review_name }}</h5>
                             <small>{{ $review->review_occupation }}</small>
 
@@ -352,13 +372,14 @@
         <div class="container">
             <div class="info">
                 <h3>Creamy Delicious.</h3>
-                <p>Plain yogurt meets its match. Perfectly paired with fruit or honey.
-                </p>
+                {{-- <p>Plain yogurt meets its match. Perfectly paired with fruit or honey.
+                </p> --}}
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quibusdam at aut. Animi dolore voluptatem,
+                    inventore sit deserunt? Iste eius quae tempore et.</p>
             </div>
             <div class="image">
-                <img src="./images/p1.png" alt="">
+                <img src="./images/cta1.png" alt="">
             </div>
-            <a href="#contact" class="btn" style="background:#008080 ">Let's Talk</a>
         </div>
     </section>
     <!--cta ends here-->

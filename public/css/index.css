@@ -64,9 +64,8 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-dark);
-    background: radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%);
     font-weight: 300;
-
+    background: var(--color-white);
 
 }
 
@@ -131,7 +130,7 @@ p {
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: .9rem 1.8rem;
     font-weight: 300;
     width: fit-content;
     background: var(--color-primary);
@@ -259,6 +258,8 @@ header {
     top: 4rem;
     display: grid;
     place-items: center;
+    background: var(--color-white);
+    /* radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%) */
 
 
 
@@ -286,12 +287,13 @@ header .container .header-image img {
     animation: yoghurt .5s linear;
 }
 
-@keyframes slideContent{
-    0%{
-      opacity:0;
-      transform: translateX(-10rem);
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
     }
-  }
+}
+
 header .container .info {
     animation: slideContent .5s linear 1s backwards;
 
@@ -412,6 +414,7 @@ header .container .info .cta a:last-child:hover img {
 .category h5 {
     margin: 2rem 0 1rem;
     color: var(--color-white);
+    font-size: 1.2rem;
 }
 
 .category p {
@@ -568,8 +571,8 @@ section#why-choose_us .container .info {
 .swiper-slide img {
     border-radius: 50%;
     border: 3px solid var(--color-primary);
-    height: 18rem;
-    width: 18rem;
+    height: 15rem;
+    width: 15rem;
 }
 
 .swiper-slide .details h5 {
@@ -671,8 +674,10 @@ section#cta .container .info p {
 
 section#cta .image {
     position: absolute;
-    top: -4rem;
-    right: 35%;
+    top: 4rem;
+    /*it was -4 */
+    right: 20%;
+    /*it was 35 */
 }
 
 section#cta .container .btn {
@@ -918,22 +923,39 @@ sup {
 
 .courses_container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    margin-top: 1rem;
 
 }
 
 .course {
-    background: var(--color-green-contact);
+    background: var(--color-dark-green);
     text-align: center;
     transition: var(--transition);
 }
 
 .course_info {
     padding: .5rem;
-    border:1px solid var(--color-green-contact);
+    color: white;
+
 }
 
+.course_info p {
+    font-size: 0.9rem;
+    padding: 1rem 0 .5rem;
+    color: var(--color-white);
+}
+
+.course_info h4 {
+    color: var(--color-white);
+}
+
+.course:hover {
+    background: var(--color-dark);
+    border-color: var(--color-primary);
+    transition: all 400ms ease;
+}
 
 .search_bar-container {
     position: relative;
@@ -1440,6 +1462,10 @@ section#testimonials {
         margin-top: -6rem;
     }
 
+    #why-choose_us .info h4 {
+        margin-top: 2rem;
+    }
+
     section#products article:last-child .image {
         margin-right: -3rem;
     }
@@ -1475,7 +1501,8 @@ section#testimonials {
 
     section#cta .container .image {
         position: absolute;
-        right: 11rem;
+        right: 1rem;
+        top: 6rem;
     }
 
     section#cta .container .btn {
@@ -1604,7 +1631,9 @@ section#testimonials {
     }
 
     .btn {
-        padding: .7rem .8rem;
+
+        padding: .5rem .5rem;
+
     }
 
 
@@ -1699,8 +1728,10 @@ section#testimonials {
 
     section#cta .container .image {
         position: relative;
-        top: 2rem;
-        right: 30%;
+        top: .2rem;
+        /*it was 2rem */
+        right: 5%;
+        /* it was 30% 8*/
     }
 
     /* =============================footer mobile grid starts here================================ */
@@ -1759,8 +1790,15 @@ section#testimonials {
         margin-top: 0;
     }
 
+    .courses h2 {
+        font-size: 2rem;
+        margin-top: 12rem;
+
+    }
+
     .courses_container {
-        grid-template-columns: 1fr;
+        margin-top: 10rem;
+        grid-template-columns: 1fr 1fr;
         gap: 0.8rem;
     }
 
@@ -1820,6 +1858,10 @@ section#testimonials {
     .categories_right {
         grid-template-columns: 1fr 1fr;
         gap: 0.7rem;
+    }
+
+    .category ul li {
+        font-size: .8rem;
     }
 
     .category {

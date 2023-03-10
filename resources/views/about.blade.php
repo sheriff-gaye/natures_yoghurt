@@ -167,7 +167,7 @@
 
             <article class="team_member">
                 <div class="team_member-image">
-                    <img src="./images/team/1675194266.jpg">
+                    <img src="./images/team/emily.png">
                 </div>
 
                 <div class="team_member-info">

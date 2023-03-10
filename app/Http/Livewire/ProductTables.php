@@ -9,19 +9,14 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 class ProductTables extends Component
 {
 
-    public $products;
-    public $search;
-    protected $queryString=['search'];
 
 
     public function render()
     {
         $cart= Cart::content();
-        sleep(.5);
-        $this->products=Products::where('product_name','like',"%{$this->search}%")->where('product_status',1)->orderBy('category_id', 'asc')->get();
-        return view('livewire.product-tables',compact('cart'),[
-            'products'=>$this->products
-        ]);
+        $products=Products::where('product_status',1)->orderBy('category_id', 'asc')->get();
+        return view('livewire.product-tables',compact('cart','products'));
+         // where('product_name','like',"%{$this->search}%")
     }
 
     public function addToCart($product_id)

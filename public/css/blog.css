@@ -73,7 +73,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
-    margin-top:-10.5rem ;
+    margin-top:0 ;
 }
 
 .category_buttons {
@@ -141,7 +141,7 @@ h3 {
     }
     .posts_container {
         grid-template-columns: 1fr;
-        margin-top:-4.3rem;
+        margin-top:1rem;
     }
     .singlepost_container{
         background: transparent;

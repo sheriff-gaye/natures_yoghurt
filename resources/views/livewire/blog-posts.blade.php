@@ -1,14 +1,4 @@
 <div>
-    <section class="search_bar">
-        <div class="container search_bar-container">
-            <div>
-                <i class="uil uil-search"></i>
-                <input type="search" id="search-item" placeholder="Search" wire:model.debounce='search'>
-
-            </div>
-        </div>
-    </section>
-
 
     <section class="posts">
         <div class="container posts_container">

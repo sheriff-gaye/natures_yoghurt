@@ -1,6 +1,6 @@
 <div>
     <link rel="stylesheet" href="{{ asset('css/shop.css') }}">
-    <section class="search_bar">
+    {{-- <section class="search_bar">
         <div class="container search_bar-container">
             <div>
                 <i class="uil uil-search"></i>
@@ -8,7 +8,11 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
+
+
+
+
     <section class="products">
         {{-- <h2>Our Products</h2> --}}
         <div class="container products_container">

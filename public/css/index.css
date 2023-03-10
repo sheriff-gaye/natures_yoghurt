@@ -1,4 +1,4 @@
-/* ====================ROOT VARIABLES=================================== */
+/* ----------------general styles starts here----------------- */
 :root {
     --color-primary: #c50c37;
     --color-primary-variant: #ffc8bb;
@@ -39,8 +39,6 @@
 }
 
 
-
-/* ======================================END OF ROOT VARIABLES=========================== */
 * {
     margin: 0;
     padding: 0;
@@ -130,15 +128,15 @@ p {
 }
 
 .btn {
-    padding: .5rem 1rem;
-    font-weight: 300;
+    display: inline-block;
     width: fit-content;
+    padding: 0.6rem 1rem;
     background: var(--color-primary);
-    color: var(--color-white);
-    border: 1px solid transparent;
+    border-radius: var(--card-border-radius-2);
     cursor: pointer;
-    transition: all 300ms ease;
-
+    color: var(--color-white);
+    transition: var(--transition);
+    color: var(--color-white);
 }
 
 .btn:hover {
@@ -148,8 +146,9 @@ p {
 }
 
 .btn-primary {
-    background-color: transparent;
-    color: var(--color-primary);
+    background-color: var(--color-about_primary);
+    color: var(--color-white);
+
 }
 
 .btn-primary:hover {
@@ -163,7 +162,11 @@ section {
     padding: 12rem 0 0;
 }
 
-/* =========================Nav Bar============================= */
+/* ----------------general styles ends here----------------- */
+
+
+
+/* ------------------------nav bar starts here--------------------- */
 
 nav {
     width: 100vw;
@@ -243,14 +246,12 @@ p {
     color: var(--color-white);
 }
 
-
-
-/* ===============================END OF NAV==================================================== */
+/* ------------------------nav ends here ------------------------------------*/
 
 
 
 
-/* ========================================HEADER STARTS HERE==================================== */
+/* ---------------------- header starts here------------- */
 header {
     height: 100vh;
     max-width: 100vw;
@@ -258,11 +259,7 @@ header {
     top: 4rem;
     display: grid;
     place-items: center;
-    background: radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%);
-    /* radial-gradient(circle at 10% 20%, rgb(248, 213, 214) 0%, rgb(243, 242, 229) 90%) */
-
-
-
+    background: var(--color-white);
 }
 
 header .container {
@@ -348,12 +345,11 @@ header .container .info .cta a:last-child {
 header .container .info .cta a:last-child:hover img {
     filter: saturate(0);
 }
+/* ---------------------header ends here --------------------- */
 
-/* ========================================HEADER ENDS HERE==================================== */
 
 
-/* ========================================CATEGORY STARTS HERE==================================== */
-
+/*-------------------- category starts here--------------------------*/
 .categories {
     height: 32rem;
 }
@@ -381,7 +377,8 @@ header .container .info .cta a:last-child:hover img {
     gap: 1.2rem;
 
 }
-.category p{
+
+.category p {
     color: white;
 }
 
@@ -449,7 +446,7 @@ header .container .info .cta a:last-child:hover img {
 
 }
 
-/* ========================================CATEGORY ENDS HERE==================================== */
+/* -----------------------category ends here -------------------------------- */
 
 
 
@@ -785,21 +782,12 @@ section#trusted-clients {
 .contact_form {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-}
-
-.form_name {
-    display: flex;
     gap: 1rem;
-}
-
-.contact_form input [type="text"] {
-    width: 50%;
-    margin-right: 20rem;
+    /* align-items: center; */
 }
 
 .contact_container input, textarea {
-    width: 96%;
+    width: 90%;
     padding: 1rem;
     background: white;
     color: var(--color-black);
@@ -940,10 +928,12 @@ sup {
 }
 
 .course_info {
-    padding: .4rem; /* was .5rem*/
+    padding: .4rem;
+    /* was .5rem*/
     color: white;
 
 }
+
 .course_info h4 {
     color: white;
     font-size: 1rem;
@@ -961,59 +951,10 @@ sup {
     transition: all 400ms ease;
 }
 
-.search_bar-container {
-    position: relative;
-    width: 25rem;
-    background: transparent;
-    border: 1px solid gray;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-    padding: 0.6rem 1rem;
-    border-radius: var(--card-border-radius-2);
-    color: black;
-    margin-top: -4rem;
-}
 
-.search_bar-container>div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.search_bar input {
-    background: transparent;
-    margin-left: 0.7rem;
-    padding: 0.5rem 0;
-    width: 100%;
-    color: black;
-}
-
-#search_msg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -170px;
-}
-
-#search_msg i {
-    font-size: 3rem;
-}
 
 .muted {
     opacity: 70%;
-}
-
-.btn {
-    display: inline-block;
-    width: fit-content;
-    padding: 0.6rem 1.2rem;
-    background: var(--color-primary);
-    border-radius: var(--card-border-radius-2);
-    cursor: pointer;
-    transition: var(--transition);
-    color: var(--color-white);
 }
 
 
@@ -1089,14 +1030,6 @@ sup {
     margin-top: 1rem;
 }
 
-.team {
-    margin-top: -8rem;
-}
-
-.team h2 {
-    text-align: center;
-    margin-top: 2rem;
-}
 
 
 .services_container {
@@ -1176,6 +1109,15 @@ sup {
     margin-left: 1rem;
 }
 
+.team {
+    margin-top: -8rem;
+}
+
+.team h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 
 .team_container {
     display: grid;
@@ -1194,13 +1136,18 @@ sup {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     border-color: var(--color-about_primary);
     color: black;
+    background: var(--color-primary-variant);
 }
 
 .team_member:hover {
     border-color: var(--color-about_primary);
+}
+
+.team_member:hover img {
+    filter: saturate(0);
 }
 
 .team_member-info h4, p {
@@ -1430,6 +1377,7 @@ sup {
 
 
     }
+
     .swiper-slide img {
         height: 12rem;
         width: 12rem;
@@ -1511,7 +1459,7 @@ sup {
         margin-right: 0;
     }
 
-    .courses h2{
+    .courses h2 {
         margin-top: 13rem;
     }
 

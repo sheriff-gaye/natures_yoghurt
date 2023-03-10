@@ -33,6 +33,10 @@ body {
 
 
 }
+h4 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
 
 .container {
     width: var(--container-width-lg);
@@ -74,11 +78,6 @@ img {
     color: var(--color-white);
     border-radius: 10px;
 }
-
-/* .products {
-    margin-top: 0rem;
-} */
-
 
 
 .products_container {

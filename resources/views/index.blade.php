@@ -23,7 +23,7 @@
                 </div>
                 {{-- it was a h1 --}}
 
-                <h2>Nature's Yoghurt</h2>
+                <h1>Yoghurt</h1>
                 <p>
                     Nature's Yoghurt Prides itself as one of the best yoghurt producers in Ghana and our customers can
                     attest to
@@ -32,7 +32,10 @@
                 </p>
                 <div class="cta">
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop Now <i class="uil uil-shopping-cart"></i></a>
+                    <a href="{{ route('shop') }}" class="btn btn-explore">Explore More<i class="uil uil-tag-alt"></i></a>
+
                 </div>
+
             </div>
 
             <div class="header-image">
@@ -182,26 +185,32 @@
                     <img src="./images/big_strawberry-min.png" alt="product_image1" />
                 </div>
                 <div class="info">
-                    <h2>Strawberry</h2>
+                    <h2>Strawberry Yoghurt</h2>
                     <p>Our strawberry flavour is smoother than Greek yoghurt and thicker than normal yoghurt. Strawberry
                         yoghurt is thick and creamy, has no preservatives, is naturally low in sugar, and is a source of
                         protein. The strawberry provides a mouthwatering smooth yoghurt that the whole family will
                         appreciate.</p>
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Buy Now</a>
+
                 </div>
             </article>
 
             <article>
 
                 <div class="info">
-                    <h2>Vanilla</h2>
+                    <h2>Vanilla Yoghurt</h2>
+
                     <p>One of the most popular flavours of yoghurt is vanilla, which has a consistency that is both creamier
                         and sweeter than fruit flavours. a delectable treat either on its own or dolloped on top of a hot
                         fruit compote, depending on your preference. This low-fat yoghurt is great for both kids and
                         grown-ups because it doesn't contain any added sugar. It does not contain any flavours or colours
                         that are made with synthetic ingredients.</p>
+
+                    <a href="{{ route('shop') }}" class="btn btn-primary">Buy Now</a>
+
                 </div>
                 <div class="image">
-                    <img src='images/big_vanilla-removebg-preview (2).png' alt="product_image1" />
+                    <img src='./images/big_vanilla-removebg-preview (2).png' alt="product_image1" />
                 </div>
 
             </article>
@@ -230,7 +239,7 @@
 
                             <p>{!! $review->review_description !!}</p>
                             <h5>{{ $review->review_name }}</h5>
-                            <small>{{ $review->review_occupation }}</small>
+
 
                         </div>
                     </article>
@@ -239,6 +248,7 @@
 
             </div>
             <div class="swiper-pagination"></div>
+
         @endif
     </section>
 

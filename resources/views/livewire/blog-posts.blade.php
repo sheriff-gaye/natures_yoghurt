@@ -27,7 +27,7 @@
 
                         <div class="post_author">
                             <div class="post_author-avatar">
-                                <img src="./images/1675178454.jpeg" alt="author_image">
+                                <img src="./images/team/author.jpeg" alt="author_image">
                             </div>
                             <div class="post_author-info">
                                 <h5>Natures Yoghurt</h5>

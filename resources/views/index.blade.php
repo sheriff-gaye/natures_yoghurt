@@ -36,7 +36,7 @@
             </div>
 
             <div class="header-image">
-                <img src="./images/new_top.png" alt="header_image"/>
+                <img src="./images/new_top.png" alt="header_image" />
             </div>
         </div>
     </header>
@@ -49,11 +49,11 @@
         <div class="container courses_container">
             <article class="course">
                 <div class="course_image">
-                    <img src="./images/large.png" alt="" />
+                    <img src="./images/fav/large.png" alt="" />
                 </div>
                 <div class="course_info">
-                    <h4>Strawberry Yoghurt</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+                    <h4>2L Gallon</h4>
+                    <p>GH₵55</p>
 
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
                 </div>
@@ -61,11 +61,11 @@
 
             <article class="course">
                 <div class="course_image">
-                    <img src="./images/medium.png" alt="" />
+                    <img src="./images/fav/medium.png" alt="" />
                 </div>
                 <div class="course_info">
-                    <h4>Vanilla Yoghurt</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+                    <h4>Medium Size</h4>
+                    <p>GH₵10</p>
 
 
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
@@ -73,11 +73,11 @@
             </article>
             <article class="course">
                 <div class="course_image">
-                    <img src="./images/Nature's flyer 3 (Copy).png" alt="" />
+                    <img src="./images/fav/Nature's flyer 3 (Copy).png" alt="" />
                 </div>
                 <div class="course_info">
-                    <h4>Wheat Yoghurt</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+                    <h4>Small Bottles</h4>
+                    <p>GH₵10</p>
 
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
                 </div>
@@ -86,11 +86,11 @@
             </article>
             <article class="course">
                 <div class="course_image">
-                    <img src="./images/Nature's flyer 2.png" alt="" />
+                    <img src="./images/fav/Nature's flyer 2.png" alt="" />
                 </div>
                 <div class="course_info">
-                    <h4>Strawberry Yoghurt</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, neque.</p>
+                    <h4>Medium Size</h4>
+                    <p>GH₵10</p>
 
                     <a href="{{ route('shop') }}" class="btn btn-primary">Shop <i class="uil uil-store"></i></a>
                 </div>
@@ -228,7 +228,7 @@
 
                             <h4>Customer Review</h4>
 
-                            <p><b>"</b>{!! $review->review_description !!}<b>"</b></p>
+                            <p>{!! $review->review_description !!}</p>
                             <h5>{{ $review->review_name }}</h5>
                             <small>{{ $review->review_occupation }}</small>
 
@@ -430,11 +430,12 @@
         <div class="container">
             <h2 style="z-index: 1">Trusted Clients</h2>
             <div class="clients">
-                <div><img src="./images/prime.png"></div>
-                <div><img src="./images/care.png"></div>
-                <div><img src="./images/oys.png" alt=""></div>
-                <div><img src="./images/mcf.png"></div>
-                <div><img src="./images/new_logo.png"></div>
+                <div><img src="./images/clients/prime.png"></div>
+                <div><img src="./images/clients/care.png"></div>
+                <div><img src="./images/clients/oys.png" alt=""></div>
+                <div><img src="./images/clients/mcf.png"></div>
+                <div><img src="./images/clients/new_logo.png"></div>
+                <div><img src="./images/clients/chaca.png"></div>
 
             </div>
         </div>

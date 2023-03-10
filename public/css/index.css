@@ -542,12 +542,14 @@ section#why-choose_us .container .info {
 .swiper {
     width: var(--width);
     height: 100%;
-    margin-top: 7rem;
+    margin-top: 3rem;
+
 }
 
 .swiper-wrapper {
     width: var(--width);
     margin-bottom: 3rem;
+
 
 }
 
@@ -555,6 +557,7 @@ section#why-choose_us .container .info {
     display: flex;
     align-items: center;
     gap: 5rem;
+
 
 }
 
@@ -574,7 +577,7 @@ section#why-choose_us .container .info {
 
 .swiper-slide img {
     border-radius: 50%;
-    border: 3px solid var(--color-primary);
+    border: 3px dotted var(--color-primary);
     height: 15rem;
     width: 15rem;
 }
@@ -916,10 +919,7 @@ sup {
 }
 
 
-.course_info h4 {
-    color: white;
-    font-size: 1rem;
-}
+
 
 .courses {
     margin-top: 5rem;
@@ -940,18 +940,18 @@ sup {
 }
 
 .course_info {
-    padding: .5rem;
+    padding: .4rem; /* was .5rem*/
     color: white;
 
+}
+.course_info h4 {
+    color: white;
+    font-size: 1rem;
 }
 
 .course_info p {
     font-size: 0.9rem;
-    padding: 1rem 0 .5rem;
-    color: var(--color-white);
-}
-
-.course_info h4 {
+    /* padding: 1rem 0 .5rem; */
     color: var(--color-white);
 }
 

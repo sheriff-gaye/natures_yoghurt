@@ -10,7 +10,7 @@
         <h2>{{$blog->blog_title}}</h2>
         <div class="post_author">
             <div class="post_author-avatar">
-                <img src="{{asset('images/1675178454.jpeg')}}" alt="author_image">
+                <img src="{{asset('./images/team/author.jpeg')}}" alt="author_image">
             </div>
             <div class="post_author-info">
                 <h5>Natures Yoghurt</h5>

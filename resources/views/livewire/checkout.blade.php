@@ -13,7 +13,7 @@
 
 
                                 <div class="form-group">
-                                    <input type="text"  name="full_name" placeholder="Full Name"
+                                    <input type="text" name="full_name" placeholder="Full Name"
                                         class="@error('full_name') border-danger @enderror" wire:model='full_name'>
                                     @error('full_name')
                                         <span class="text-danger">{{ $message }}</span>
@@ -120,30 +120,33 @@
 
                                         <div class="custome-radio">
 
-                                            <input class="form-check-input" type="radio" name="payment"
-                                                id="momo" value="momo" wire:model='payment'>
+                                            <input class="form-check-input" type="radio" name="payment" id="momo"
+                                                value="momo" wire:model='payment'>
 
-                                            <label class="form-check-label" for="momo"
-                                                data-bs-toggle="collapse" data-target="#cardPayment"
-                                                aria-controls="cardPayment" href="#collapsePassword">MOMO</label>
+                                            <label class="form-check-label" for="momo" data-bs-toggle="collapse"
+                                                data-target="#cardPayment" aria-controls="cardPayment"
+                                                href="#collapsePassword">MOMO</label>
                                         </div>
 
                                         @error('payment')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>
-                                    @if($payment=='momo')
-                                    <img src="./images/payment.jpeg" alt="payment_deatails">
-                                    <p><b> Reach out to us if you have difficulty making a payment.</b></p>
-                                    <p>Email: naturesfoods.gh@gmail.com</p>
-                                    <p>Phone: +233261630600 / +233246459351</p>
+                                    @if ($payment == 'momo')
+                                        <img src="./images/payment.png" alt="payment_deatails">
+
+                                        <p style="color:black"><b> Reach out to us if you have difficulty making a
+                                                payment.</b></p>
+                                        <p style="color:black">Email: naturesfoods.gh@gmail.com</p>
+                                        <p style="color:black" >Phone: +233261630600 / +233246459351</p>
                                     @endif
 
                                 </div>
                                 <a class="btn btn-fill-out btn-block mt-30" style="background:#c50c37;border:none"
                                     wire:click='order'>Place
                                     Order</a>
-                                    <a class="btn btn-fill-out btn-block mt-30" style="background:#c50c37;border:none" href="{{ route('shop') }}">Shopping Cart</a>
+                                <a class="btn btn-fill-out btn-block mt-30" style="background:#c50c37;border:none"
+                                    href="{{ route('shop') }}">Shopping Cart</a>
                             </div>
                         </div>
                     </div>
